@@ -1,0 +1,255 @@
+/* webtoon — 웹툰/만화 스타일 (fun comic skin)
+   클래스 계약은 white1.css 구조와 동일. ★ functional 규칙 유지. 모바일 우선.
+   BOLD 검정 외곽선 + 스티커형 하드 섀도우 + 팝 컬러 로테이션. */
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Gaegu:wght@400;700&display=swap');
+
+:root{
+  --bg:#fff7e6;
+  --surface:#ffffff;
+  --ink:#1a1a1a;
+  --mut:#6b6256;
+  --line:#1a1a1a;
+  --paper:#fffdf6;
+
+  /* 팝 컬러 팔레트 */
+  --yellow:#ffd23f;
+  --coral:#ff6b6b;
+  --sky:#4dabf7;
+  --mint:#51cf66;
+  --grape:#b197fc;
+
+  --accent:#ff6b6b;
+  --ok:#2f9e44;
+  --bad:#e03131;
+  --warn:#e8590c;
+
+  /* 만화 패널 외곽선 + 스티커 섀도우(블러 0) */
+  --bd:2.5px solid #1a1a1a;
+  --bd-fat:3px solid #1a1a1a;
+  --pop:4px 4px 0 #1a1a1a;
+  --pop-sm:3px 3px 0 #1a1a1a;
+  --pop-lg:5px 5px 0 #1a1a1a;
+  --radius:18px;
+
+  --disp:'Jua','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+  --body:'Gaegu','Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  /* 햇살 배경 + 하프톤 점 텍스처(radial-gradient) */
+  background-color:var(--bg);
+  background-image:
+    radial-gradient(rgba(26,26,26,.06) 1.4px, transparent 1.5px),
+    radial-gradient(rgba(255,107,107,.05) 1.4px, transparent 1.5px);
+  background-size:18px 18px, 18px 18px;
+  background-position:0 0, 9px 9px;
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:16px; line-height:1.5; font-weight:700;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;            /* ★ */
+}
+.loading{padding:40px;text-align:center;color:var(--mut);font-family:var(--disp);font-size:18px}
+
+/* ── 상단 ── */
+.dash-top{
+  position:sticky;top:0;z-index:10;
+  background:var(--yellow);
+  background-image:radial-gradient(rgba(26,26,26,.07) 1.4px, transparent 1.5px);
+  background-size:14px 14px;
+  padding:13px 16px 10px;
+  border-bottom:var(--bd-fat);
+  box-shadow:0 4px 0 rgba(26,26,26,.12);
+}
+.dash-brand{
+  font-family:var(--disp);
+  font-size:26px;font-weight:400;letter-spacing:-.01em;color:var(--ink);
+  text-shadow:2px 2px 0 #fff, 3px 3px 0 rgba(26,26,26,.25);
+  transform:rotate(-1.5deg);
+  display:inline-block;
+}
+.dash-gen{
+  font-family:var(--disp);
+  font-size:13px;color:#7a5a00;margin-top:4px;font-weight:400;
+  background:#fff;border:2px solid var(--ink);border-radius:999px;
+  padding:1px 9px;display:inline-block;box-shadow:var(--pop-sm);
+  transform:rotate(1deg);
+}
+.skin-switch{
+  display:flex;gap:8px;margin-top:12px;overflow-x:auto;
+  padding:2px 2px 4px;-webkit-overflow-scrolling:touch;
+}
+.skin-switch::-webkit-scrollbar{display:none}
+.skin-btn{
+  flex:0 0 auto;cursor:pointer;
+  border:var(--bd);background:#fff;color:var(--ink);
+  font-family:var(--disp);font-size:14px;font-weight:400;
+  padding:5px 13px;border-radius:999px;white-space:nowrap;
+  box-shadow:var(--pop-sm);transition:transform .12s, box-shadow .12s;
+}
+.skin-btn:hover{transform:translate(-1px,-1px);box-shadow:var(--pop)}
+.skin-btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #1a1a1a}
+.skin-btn.is-active{            /* ★ 선택 표시 */
+  background:var(--coral);color:#fff;
+  box-shadow:var(--pop);transform:translate(-1px,-1px) rotate(-2deg);
+}
+
+/* ── 탭 ── */
+.tabbar{
+  display:flex;gap:8px;padding:14px 14px 2px;
+  position:sticky;top:84px;z-index:9;background:transparent;
+}
+.tab{
+  flex:1;cursor:pointer;
+  border:var(--bd);background:#fff;color:var(--ink);
+  padding:9px 0;border-radius:14px;font-size:21px;position:relative;
+  box-shadow:var(--pop-sm);transition:transform .12s, box-shadow .12s, background .12s;
+}
+.tab:hover{transform:translate(-1px,-1px);box-shadow:var(--pop)}
+.tab:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #1a1a1a}
+.tab.is-active{                 /* ★ 활성 탭 = 팝업 + 컬러 채움 */
+  background:var(--sky);
+  border:var(--bd-fat);
+  box-shadow:var(--pop-lg);
+  transform:translate(-1px,-3px) rotate(-1.5deg);
+}
+.tab-badge{                     /* 만화 버스트 */
+  position:absolute;top:-7px;right:calc(50% - 26px);
+  font-family:var(--disp);font-size:11px;font-weight:400;line-height:1;
+  background:var(--coral);color:#fff;
+  border:2px solid var(--ink);border-radius:999px;
+  padding:3px 6px;min-width:18px;text-align:center;
+  box-shadow:2px 2px 0 #1a1a1a;
+}
+
+/* ── 패널/카드 ── */
+.panel{display:none}             /* ★ */
+.panel.is-active{                /* ★ minmax 규칙 그대로 */
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));
+  gap:14px;padding:14px;align-items:start;
+}
+.card{
+  background:var(--surface);
+  border:var(--bd-fat);
+  border-radius:var(--radius);
+  box-shadow:var(--pop);
+  overflow:hidden;
+  transition:transform .12s, box-shadow .12s;
+}
+/* 카드별 강조색 로테이션 + 손맛 회전 */
+.card{transform:rotate(-1deg)}
+.card:nth-child(2n){transform:rotate(.8deg)}
+.card:nth-child(3n){transform:rotate(-.5deg)}
+.card:hover{transform:rotate(0deg) translate(-1px,-2px);box-shadow:var(--pop-lg)}
+.card-head{
+  display:flex;justify-content:space-between;align-items:center;gap:8px;
+  padding:11px 15px 10px;
+  border-bottom:var(--bd);
+  background:var(--yellow);
+}
+.card:nth-child(4n+1) .card-head{background:var(--yellow)}
+.card:nth-child(4n+2) .card-head{background:var(--coral)}
+.card:nth-child(4n+3) .card-head{background:var(--sky)}
+.card:nth-child(4n+0) .card-head{background:var(--mint)}
+.card-title{
+  font-family:var(--disp);font-weight:400;font-size:20px;
+  color:var(--ink);letter-spacing:-.01em;line-height:1.15;
+}
+.card-count{
+  font-family:var(--disp);font-size:14px;font-weight:400;color:var(--ink);
+  background:#fff;border:2px solid var(--ink);border-radius:999px;
+  padding:0 9px;line-height:1.5;box-shadow:1.5px 1.5px 0 #1a1a1a;
+  flex:0 0 auto;
+}
+.card-body{padding:4px 15px 14px;max-height:62vh;overflow:auto}  /* ★ scrollable */
+.card-body::-webkit-scrollbar{width:8px}
+.card-body::-webkit-scrollbar-thumb{background:var(--ink);border-radius:999px}
+
+.row{padding:9px 0;border-bottom:2px dashed rgba(26,26,26,.18)}
+.row:last-child{border-bottom:0}
+.row-when{
+  font-family:var(--disp);font-size:14px;font-weight:400;color:var(--coral);
+  margin-bottom:1px;
+}
+.row-text{font-size:16px;color:var(--ink)}
+.sec-h{
+  font-family:var(--disp);font-size:14px;font-weight:400;color:#fff;
+  background:var(--ink);display:inline-block;
+  padding:1px 10px;border-radius:999px;
+  letter-spacing:.02em;margin:13px 0 6px;
+  transform:rotate(-1.5deg);box-shadow:var(--pop-sm);
+}
+.sub{color:var(--mut);font-size:14px;padding:4px 0}
+.empty{
+  color:var(--mut);font-style:italic;padding:16px 0;text-align:center;
+  font-family:var(--disp);font-size:16px;
+}
+
+/* ── 서비스 5칩 (스티커 알약) ── */
+.svc-strip{grid-column:1/-1;display:flex;gap:7px}   /* ★ full width */
+.svc-chip{
+  flex:1;                       /* ★ 360px서 5개 한 줄 */
+  display:flex;align-items:center;justify-content:center;gap:5px;
+  background:#fff;
+  border:var(--bd);border-radius:999px;
+  box-shadow:var(--pop-sm);
+  padding:8px 3px;min-width:0;
+  font-family:var(--disp);font-size:13px;font-weight:400;
+  white-space:nowrap;                                /* ★ */
+  transform:rotate(-1deg);
+}
+.svc-strip .svc-chip:nth-child(2n){transform:rotate(1.2deg)}
+.svc-strip .svc-chip:nth-child(3n){transform:rotate(-.6deg)}
+.svc-dot{
+  width:9px;height:9px;border-radius:50%;flex:0 0 auto;
+  background:var(--bad);border:1.5px solid var(--ink);
+}
+.svc-chip.is-on .svc-dot{background:var(--mint)}     /* 초록 */
+.svc-chip.is-off .svc-dot{background:var(--coral)}   /* 빨강 */
+.svc-chip.is-on{background:#eafff0}
+.svc-chip.is-off{background:#fff0f0;color:var(--bad)}
+.svc-label{color:var(--ink);overflow:hidden;text-overflow:ellipsis}
+
+/* ── 아이디어 ── */
+.idea{padding:10px 0;border-bottom:2px dashed rgba(26,26,26,.18)}
+.idea:last-child{border-bottom:0}
+.idea-name{font-family:var(--disp);font-weight:400;font-size:18px;color:var(--ink)}
+.idea-desc{color:var(--mut);font-size:14.5px;margin-top:2px;line-height:1.45}
+
+/* ── 대화 (말풍선 느낌) ── */
+.chat-line{
+  padding:9px 11px;margin:8px 0;
+  border:var(--bd);border-radius:14px;background:#fff;
+  box-shadow:var(--pop-sm);position:relative;
+}
+.chat-line.is-user{background:#eaf4ff;border-radius:14px 14px 4px 14px}
+.chat-line.is-bot{background:#fff7e6;border-radius:14px 14px 14px 4px}
+.chat-who{font-family:var(--disp);font-weight:400;font-size:14px}
+.chat-line.is-user .chat-who{color:var(--sky)}
+.chat-line.is-bot .chat-who{color:var(--ok)}
+.chat-when{color:var(--mut);font-size:12px;margin-left:6px;font-weight:400}
+.chat-msg{font-size:15.5px;margin-top:2px;color:var(--ink);line-height:1.45}
+
+/* ── 태그 (컬러 외곽선 스티커) ── */
+.tag{
+  display:inline-block;font-family:var(--disp);font-size:14px;font-weight:400;
+  color:var(--ink);background:var(--yellow);
+  border:2px solid var(--ink);border-radius:999px;
+  padding:2px 11px;margin:0 6px 7px 0;
+  box-shadow:var(--pop-sm);transform:rotate(-1.5deg);
+}
+.tag:nth-child(4n+2){background:var(--coral);color:#fff;transform:rotate(1.5deg)}
+.tag:nth-child(4n+3){background:var(--sky);color:#fff;transform:rotate(-1deg)}
+.tag:nth-child(4n+0){background:var(--mint);transform:rotate(1deg)}
+
+/* ── 좁은 화면: 1열 + 회전 완화(가독성) ── */
+@media (max-width:380px){
+  body{font-size:15px}
+  .card-title{font-size:18px}
+  .dash-brand{font-size:23px}
+  .card,.card:nth-child(2n),.card:nth-child(3n){transform:rotate(0deg)}
+  .svc-chip{font-size:12px;gap:4px;padding:8px 2px}
+  .svc-dot{width:8px;height:8px}
+}

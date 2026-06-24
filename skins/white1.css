@@ -1,0 +1,100 @@
+/* white1 — 고급 화이트·미니멀 (레퍼런스 스킨)
+   클래스 계약은 render.js 주석 참조. 모바일 우선. */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --ink:#1a1d24; --mut:#6b7280; --line:#eceef1;
+  --accent:#3b5bdb; --accent-soft:#eef1fe; --ok:#1aa179; --bad:#e0444e; --warn:#b4690e;
+  --shadow:0 1px 2px rgba(20,24,40,.04),0 6px 20px rgba(20,24,40,.06);
+  --radius:16px;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:'Pretendard',-apple-system,'Segoe UI','Noto Sans KR',sans-serif;
+  font-size:14px; line-height:1.55; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.loading{padding:40px;text-align:center;color:var(--mut)}
+
+/* ── 상단 ── */
+.dash-top{
+  position:sticky;top:0;z-index:10;background:rgba(245,246,248,.85);
+  backdrop-filter:saturate(160%) blur(10px);
+  padding:14px 18px 8px;border-bottom:1px solid var(--line);
+}
+.dash-brand{font-size:18px;font-weight:800;letter-spacing:-.02em}
+.dash-gen{font-size:11px;color:var(--mut);margin-top:1px}
+.skin-switch{display:flex;gap:6px;margin-top:10px;overflow-x:auto;padding-bottom:2px;-webkit-overflow-scrolling:touch}
+.skin-switch::-webkit-scrollbar{display:none}
+.skin-btn{
+  flex:0 0 auto;cursor:pointer;border:1px solid var(--line);background:var(--surface);
+  color:var(--mut);font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px;
+  white-space:nowrap;transition:.15s;
+}
+.skin-btn.is-active{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* ── 탭 ── */
+.tabbar{display:flex;gap:6px;padding:12px 14px 0;position:sticky;top:74px;z-index:9;background:transparent}
+.tab{
+  flex:1;cursor:pointer;border:none;background:transparent;color:var(--mut);
+  padding:9px 0;border-radius:13px;font-size:21px;position:relative;transition:.15s;
+}
+.tab.is-active{background:var(--surface);box-shadow:var(--shadow);color:var(--ink)}
+.tab-badge{
+  position:absolute;top:3px;right:calc(50% - 22px);font-size:10px;font-weight:700;
+  background:var(--accent);color:#fff;border-radius:999px;padding:0 5px;min-width:15px;line-height:15px;
+}
+
+/* ── 패널/카드 ── */
+.panel{display:none}
+.panel.is-active{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));
+  gap:14px;padding:14px;align-items:start;
+}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);overflow:hidden}
+.card-head{display:flex;justify-content:space-between;align-items:center;
+  padding:13px 16px 10px;font-weight:700;font-size:14px}
+.card-count{font-size:12px;font-weight:700;color:var(--accent);background:var(--accent-soft);
+  border-radius:999px;padding:1px 9px}
+.card-body{padding:0 16px 14px;max-height:62vh;overflow:auto}
+
+.row{padding:9px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row-when{font-size:12px;font-weight:700;color:var(--accent);margin-bottom:2px}
+.row-text{font-size:13.5px}
+.sec-h{font-size:11px;font-weight:800;color:var(--warn);text-transform:uppercase;
+  letter-spacing:.04em;margin:13px 0 4px}
+.sub{color:var(--mut);font-size:12px;padding:4px 0}
+.empty{color:var(--mut);font-style:italic;padding:14px 0;text-align:center;font-size:13px}
+
+/* ── 서비스 5칩 ── */
+.svc-strip{grid-column:1/-1;display:flex;gap:7px}
+.svc-chip{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;
+  background:var(--surface);border:1px solid var(--line);border-radius:12px;
+  box-shadow:var(--shadow);padding:9px 4px;font-size:12px;font-weight:700;white-space:nowrap}
+.svc-dot{width:7px;height:7px;border-radius:50%;background:var(--bad);box-shadow:0 0 0 3px rgba(224,68,78,.12)}
+.svc-chip.is-on .svc-dot{background:var(--ok);box-shadow:0 0 0 3px rgba(26,161,121,.14)}
+.svc-chip.is-off{color:var(--bad)}
+.svc-label{color:var(--ink)}
+
+/* ── 아이디어 ── */
+.idea{padding:10px 0;border-bottom:1px solid var(--line)}
+.idea:last-child{border-bottom:0}
+.idea-name{font-weight:700;font-size:13.5px}
+.idea-desc{color:var(--mut);font-size:12.5px;margin-top:2px}
+
+/* ── 대화 ── */
+.chat-line{padding:8px 0;border-bottom:1px solid var(--line)}
+.chat-line:last-child{border-bottom:0}
+.chat-who{font-weight:800;font-size:12px}
+.chat-line.is-user .chat-who{color:var(--accent)}
+.chat-line.is-bot .chat-who{color:var(--ok)}
+.chat-when{color:var(--mut);font-size:10.5px;margin-left:6px}
+.chat-msg{font-size:13px;margin-top:2px}
+
+/* ── 태그 ── */
+.tag{display:inline-block;font-size:12px;font-weight:600;color:var(--accent);
+  background:var(--accent-soft);border-radius:8px;padding:3px 10px;margin:0 5px 6px 0}

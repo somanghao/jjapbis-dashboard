@@ -1,0 +1,201 @@
+/* cyber — 사이버펑크 2077 HUD 스킨
+   Near-black + neon yellow/cyan/magenta. Monospace techno display.
+   클래스 계약은 white1.css / render.js 참조. 모바일 우선.
+   ★ 표시 규칙(.panel toggle, .svc-strip grid-column, 상태 클래스)은 기능상 필수 — 변경 금지. */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@500;600;700&family=Orbitron:wght@600;700;800&display=swap');
+
+:root{
+  --bg:#05060a; --bg2:#0a0a0f; --surface:#11131c; --surface2:#0d0f17;
+  --ink:#dfe7ee; --mut:#7c8696; --line:#22283a;
+  --yellow:#fcee0a; --cyan:#00f0ff; --magenta:#ff003c; --green:#39ff7a;
+  --line-neon:#2a3350;
+  --glow-y:0 0 6px rgba(252,238,10,.55);
+  --glow-c:0 0 6px rgba(0,240,255,.55);
+  --glow-m:0 0 8px rgba(255,0,60,.6);
+  --notch:polygon(0 10px,10px 0,calc(100% - 10px) 0,100% 10px,100% calc(100% - 10px),calc(100% - 10px) 100%,10px 100%,0 calc(100% - 10px));
+  --radius:0px;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:
+    repeating-linear-gradient(0deg, rgba(0,240,255,.025) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(252,238,10,.018) 0 1px, transparent 1px 40px),
+    repeating-linear-gradient(0deg, rgba(252,238,10,.018) 0 1px, transparent 1px 40px),
+    radial-gradient(120% 80% at 50% -10%, #0f1220 0%, var(--bg2) 45%, var(--bg) 100%);
+  background-attachment:fixed;
+  color:var(--ink);
+  font-family:'Rajdhani','Share Tech Mono',-apple-system,'Noto Sans KR',sans-serif;
+  font-size:14.5px; line-height:1.5; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.loading{padding:40px;text-align:center;color:var(--cyan);font-family:'Share Tech Mono',monospace;
+  letter-spacing:.15em;text-transform:uppercase;text-shadow:var(--glow-c)}
+
+/* ── 상단 ── */
+.dash-top{
+  position:sticky;top:0;z-index:10;
+  background:linear-gradient(180deg, rgba(8,9,16,.96), rgba(8,9,16,.82));
+  backdrop-filter:saturate(140%) blur(8px);
+  padding:14px 18px 9px;
+  border-bottom:1px solid var(--line-neon);
+  box-shadow:0 1px 0 rgba(0,240,255,.18), 0 8px 24px rgba(0,0,0,.6);
+}
+.dash-brand{
+  font-family:'Orbitron','Share Tech Mono',monospace;
+  font-size:18px;font-weight:800;letter-spacing:.06em;color:var(--yellow);
+  text-shadow:var(--glow-y);
+}
+.dash-gen{
+  font-family:'Share Tech Mono',monospace;
+  font-size:11px;color:var(--cyan);margin-top:3px;letter-spacing:.08em;
+  text-shadow:0 0 4px rgba(0,240,255,.35);
+}
+.skin-switch{display:flex;gap:7px;margin-top:11px;overflow-x:auto;padding-bottom:3px;-webkit-overflow-scrolling:touch}
+.skin-switch::-webkit-scrollbar{display:none}
+.skin-btn{
+  flex:0 0 auto;cursor:pointer;
+  border:1px solid var(--line-neon);background:var(--surface2);
+  color:var(--mut);
+  font-family:'Share Tech Mono',monospace;
+  font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:6px 13px;border-radius:0;white-space:nowrap;transition:.15s;
+  clip-path:polygon(7px 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%,0 7px);
+}
+.skin-btn:hover{color:var(--cyan);border-color:var(--cyan)}
+.skin-btn.is-active{
+  background:var(--yellow);color:#0a0a0f;border-color:var(--yellow);
+  box-shadow:var(--glow-y),inset 0 0 12px rgba(255,255,255,.25);
+}
+
+/* ── 탭 ── */
+.tabbar{display:flex;gap:7px;padding:12px 14px 0;position:sticky;top:78px;z-index:9;background:transparent}
+.tab{
+  flex:1;cursor:pointer;background:var(--surface2);color:var(--mut);
+  border:1px solid var(--line-neon);
+  padding:9px 0;font-size:21px;position:relative;transition:.15s;
+  clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px);
+}
+.tab:hover{color:var(--ink);border-color:var(--cyan)}
+.tab.is-active{
+  background:linear-gradient(180deg, rgba(252,238,10,.10), rgba(252,238,10,.02));
+  color:var(--yellow);border-color:var(--yellow);
+  box-shadow:0 0 10px rgba(252,238,10,.35),inset 0 -3px 0 var(--yellow);
+}
+.tab.is-active .tab-ico{filter:drop-shadow(0 0 4px rgba(252,238,10,.6))}
+.tab-badge{
+  position:absolute;top:2px;right:calc(50% - 22px);
+  font-family:'Share Tech Mono',monospace;
+  font-size:10px;font-weight:700;
+  background:var(--magenta);color:#fff;border-radius:999px;
+  padding:0 5px;min-width:15px;line-height:15px;text-align:center;
+  box-shadow:var(--glow-m);
+}
+
+/* ── 패널/카드 ── */
+/* ★ MANDATORY: 절대 변경 금지 */
+.panel{display:none}
+.panel.is-active{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));
+  gap:14px;padding:14px;align-items:start;
+}
+.card{
+  position:relative;background:var(--surface);
+  border:1px solid var(--line-neon);border-radius:0;
+  clip-path:var(--notch);
+  box-shadow:0 0 0 1px rgba(0,240,255,.06),0 0 18px rgba(0,240,255,.07),0 10px 26px rgba(0,0,0,.55);
+  overflow:hidden;
+}
+.card::before{
+  content:"";position:absolute;left:0;top:0;height:2px;width:42%;
+  background:linear-gradient(90deg,var(--cyan),transparent);
+  box-shadow:var(--glow-c);opacity:.8;pointer-events:none;
+}
+.card-head{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:13px 16px 9px;
+  border-bottom:1px solid var(--line);
+}
+.card-title{
+  font-family:'Rajdhani','Share Tech Mono',sans-serif;
+  font-weight:700;font-size:15px;letter-spacing:.04em;
+  color:var(--yellow);text-shadow:0 0 5px rgba(252,238,10,.4);
+}
+.card-count{
+  font-family:'Share Tech Mono',monospace;
+  font-size:11.5px;font-weight:700;color:var(--cyan);
+  border:1px solid var(--cyan);background:rgba(0,240,255,.08);
+  border-radius:0;padding:1px 9px;letter-spacing:.05em;
+  box-shadow:0 0 6px rgba(0,240,255,.2);
+}
+.card-body{padding:6px 16px 14px;max-height:62vh;overflow:auto}
+.card-body::-webkit-scrollbar{width:6px}
+.card-body::-webkit-scrollbar-thumb{background:var(--line-neon);border-radius:0}
+.card-body::-webkit-scrollbar-thumb:hover{background:var(--cyan)}
+
+.row{padding:9px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row-when{
+  font-family:'Share Tech Mono',monospace;
+  font-size:12px;font-weight:700;color:var(--cyan);margin-bottom:2px;
+  letter-spacing:.05em;text-shadow:0 0 5px rgba(0,240,255,.4);
+}
+.row-text{font-size:14px}
+.sec-h{
+  font-family:'Share Tech Mono',monospace;
+  font-size:11px;font-weight:700;color:var(--magenta);text-transform:uppercase;
+  letter-spacing:.12em;margin:14px 0 5px;text-shadow:var(--glow-m);
+  border-left:3px solid var(--magenta);padding-left:8px;
+}
+.sub{color:var(--mut);font-size:12.5px;padding:4px 0}
+.empty{color:var(--mut);font-style:italic;padding:16px 0;text-align:center;font-size:13px;
+  font-family:'Share Tech Mono',monospace;letter-spacing:.06em}
+
+/* ── 서비스 5칩 ── */
+/* ★ grid-column:1/-1 + 360px에서 5개 가로 정렬 (flex:1, compact, nowrap) */
+.svc-strip{grid-column:1/-1;display:flex;gap:6px}
+.svc-chip{
+  flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:5px;
+  background:var(--surface2);border:1px solid var(--line-neon);border-radius:0;
+  clip-path:polygon(5px 0,100% 0,100% calc(100% - 5px),calc(100% - 5px) 100%,0 100%,0 5px);
+  padding:9px 3px;
+  font-family:'Share Tech Mono',monospace;
+  font-size:11px;font-weight:700;white-space:nowrap;letter-spacing:.02em;
+  box-shadow:0 4px 14px rgba(0,0,0,.5);
+}
+.svc-dot{width:8px;height:8px;border-radius:50%;flex:0 0 auto;
+  background:var(--magenta);box-shadow:0 0 6px var(--magenta),0 0 0 3px rgba(255,0,60,.14)}
+.svc-chip.is-on{border-color:rgba(57,255,122,.5)}
+.svc-chip.is-on .svc-dot{
+  background:var(--green);box-shadow:0 0 8px var(--green),0 0 0 3px rgba(57,255,122,.18);
+  animation:svcPulse 1.8s ease-in-out infinite;
+}
+.svc-chip.is-off{color:var(--magenta);border-color:rgba(255,0,60,.45)}
+.svc-label{color:var(--ink)}
+.svc-chip.is-off .svc-label{color:var(--magenta)}
+@keyframes svcPulse{0%,100%{box-shadow:0 0 6px var(--green),0 0 0 3px rgba(57,255,122,.10)}
+  50%{box-shadow:0 0 12px var(--green),0 0 0 4px rgba(57,255,122,.28)}}
+
+/* ── 아이디어 ── */
+.idea{padding:10px 0;border-bottom:1px solid var(--line)}
+.idea:last-child{border-bottom:0}
+.idea-name{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:14.5px;color:var(--ink);letter-spacing:.02em}
+.idea-desc{color:var(--mut);font-size:12.5px;margin-top:2px}
+
+/* ── 대화 ── */
+.chat-line{padding:8px 0;border-bottom:1px solid var(--line)}
+.chat-line:last-child{border-bottom:0}
+.chat-who{font-family:'Share Tech Mono',monospace;font-weight:700;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase}
+.chat-line.is-user .chat-who{color:var(--yellow);text-shadow:0 0 4px rgba(252,238,10,.4)}
+.chat-line.is-bot .chat-who{color:var(--cyan);text-shadow:0 0 4px rgba(0,240,255,.4)}
+.chat-when{color:var(--mut);font-family:'Share Tech Mono',monospace;font-size:10px;margin-left:6px;letter-spacing:.05em}
+.chat-msg{font-size:13.5px;margin-top:3px}
+
+/* ── 태그 ── */
+.tag{
+  display:inline-block;font-family:'Share Tech Mono',monospace;
+  font-size:11.5px;font-weight:700;color:var(--cyan);letter-spacing:.04em;
+  background:rgba(0,240,255,.06);border:1px solid var(--cyan);
+  border-radius:0;padding:3px 10px;margin:0 5px 6px 0;
+  box-shadow:0 0 6px rgba(0,240,255,.15);
+}

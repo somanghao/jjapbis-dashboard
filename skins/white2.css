@@ -1,0 +1,160 @@
+/* white2 — 화이트·소프트 (premium soft white)
+   따뜻하고 포근한 프리미엄 화이트. 크림 배경 + 순백 카드 + 부드러운 민트 액센트.
+   클래스 계약은 render.js 주석 / white1.css 참조. 모바일 우선.
+   ★ 기능 규칙(.panel 토글, .svc-strip grid-column, 상태 클래스)은 white1 과 동일하게 유지. */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+
+:root{
+  --bg:#faf9f6;            /* 따뜻한 오프화이트/크림 */
+  --bg2:#f3f1ea;           /* 살짝 더 깊은 크림 (그라데이션용) */
+  --surface:#ffffff;       /* 순백 카드 */
+  --ink:#3a3733;           /* 부드러운 잉크(완전 검정 회피) */
+  --ink-soft:#5b574f;
+  --mut:#a39d92;           /* 차분한 뮤트 */
+  --line:#f0ede6;          /* 매우 옅은 라인 */
+  --accent:#5ec9a7;        /* 소프트 민트 */
+  --accent-deep:#3fae8c;   /* 텍스트 가독용 진한 민트 */
+  --accent-soft:#e8f7f1;   /* 민트 틴트 배경 */
+  --ok:#4cc38a; --bad:#e7857c; --warn:#cba35e;
+  /* 부드럽게 퍼지는 디퓨즈 섀도 (하드 보더 없음) */
+  --shadow:0 1px 1px rgba(58,55,51,.03),0 8px 24px rgba(58,55,51,.06);
+  --shadow-lift:0 2px 4px rgba(58,55,51,.04),0 14px 34px rgba(94,201,167,.14);
+  --radius:20px;
+  --radius-sm:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:
+    radial-gradient(120% 80% at 50% -10%, #ffffff 0%, var(--bg) 42%, var(--bg2) 100%) fixed;
+  color:var(--ink);
+  font-family:'Pretendard','Gowun Dodum',-apple-system,'Segoe UI','Noto Sans KR',sans-serif;
+  font-size:14px; line-height:1.6; letter-spacing:-.01em;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+}
+.loading{padding:48px;text-align:center;color:var(--mut);font-weight:600;letter-spacing:.02em}
+
+/* ── 상단 ── */
+.dash-top{
+  position:sticky;top:0;z-index:10;
+  background:rgba(250,249,246,.82);
+  backdrop-filter:saturate(150%) blur(14px);
+  -webkit-backdrop-filter:saturate(150%) blur(14px);
+  padding:16px 20px 10px;border-bottom:1px solid var(--line);
+}
+.dash-brand{font-size:19px;font-weight:800;letter-spacing:-.025em;color:var(--ink)}
+.dash-gen{font-size:11px;color:var(--mut);margin-top:2px;font-weight:600}
+.skin-switch{display:flex;gap:7px;margin-top:12px;overflow-x:auto;padding-bottom:3px;-webkit-overflow-scrolling:touch}
+.skin-switch::-webkit-scrollbar{display:none}
+.skin-btn{
+  flex:0 0 auto;cursor:pointer;border:1px solid var(--line);
+  background:var(--surface);color:var(--mut);
+  font-size:12px;font-weight:700;padding:7px 14px;border-radius:999px;
+  white-space:nowrap;box-shadow:0 1px 2px rgba(58,55,51,.04);
+  transition:.15s ease;
+}
+.skin-btn:hover{color:var(--ink-soft);transform:translateY(-1px)}
+.skin-btn.is-active{
+  background:var(--accent);color:#fff;border-color:var(--accent);
+  box-shadow:0 4px 14px rgba(94,201,167,.32);
+}
+
+/* ── 탭 ── */
+.tabbar{display:flex;gap:8px;padding:14px 16px 0;position:sticky;top:80px;z-index:9;background:transparent}
+.tab{
+  flex:1;cursor:pointer;border:none;background:rgba(255,255,255,.45);color:var(--mut);
+  padding:11px 0;border-radius:16px;font-size:21px;position:relative;transition:.15s ease;
+}
+.tab:hover{color:var(--ink-soft);background:rgba(255,255,255,.7)}
+.tab.is-active{
+  background:var(--surface);box-shadow:var(--shadow-lift);color:var(--ink);
+  transform:translateY(-2px);
+}
+.tab-badge{
+  position:absolute;top:4px;right:calc(50% - 23px);font-size:10px;font-weight:800;
+  background:var(--accent);color:#fff;border-radius:999px;padding:0 5px;
+  min-width:16px;line-height:16px;text-align:center;
+  box-shadow:0 2px 6px rgba(94,201,167,.4);
+}
+
+/* ── 패널/카드 ── */
+.panel{display:none}
+.panel.is-active{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));
+  gap:14px;padding:14px;align-items:start;
+}
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);overflow:hidden;transition:box-shadow .15s ease,transform .15s ease;
+}
+.card:hover{box-shadow:var(--shadow-lift);transform:translateY(-1px)}
+.card-head{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:16px 18px 11px;font-weight:800;font-size:14.5px;color:var(--ink);
+}
+.card-title{letter-spacing:-.01em}
+.card-count{
+  font-size:12px;font-weight:800;color:var(--accent-deep);background:var(--accent-soft);
+  border-radius:999px;padding:2px 11px;flex:0 0 auto;
+}
+.card-body{padding:0 18px 16px;max-height:62vh;overflow:auto;-webkit-overflow-scrolling:touch}
+.card-body::-webkit-scrollbar{width:7px}
+.card-body::-webkit-scrollbar-thumb{background:#e7e2d8;border-radius:999px;border:2px solid transparent;background-clip:padding-box}
+.card-body::-webkit-scrollbar-track{background:transparent}
+
+.row{padding:11px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row-when{font-size:12px;font-weight:800;color:var(--accent-deep);margin-bottom:3px;letter-spacing:-.01em}
+.row-text{font-size:13.5px;color:var(--ink-soft)}
+.sec-h{
+  font-size:11px;font-weight:800;color:var(--warn);text-transform:uppercase;
+  letter-spacing:.06em;margin:15px 0 5px;
+}
+.sub{color:var(--mut);font-size:12px;padding:5px 0;font-weight:500}
+.empty{color:var(--mut);font-style:italic;padding:24px 0;text-align:center;font-size:13px}
+
+/* ── 서비스 5칩 (★ grid-column:1/-1, 360px 5개 한 줄) ── */
+.svc-strip{grid-column:1/-1;display:flex;gap:8px}
+.svc-chip{
+  flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:5px;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);
+  box-shadow:var(--shadow);padding:11px 4px;font-size:12px;font-weight:700;
+  white-space:nowrap;transition:.15s ease;
+}
+.svc-dot{
+  width:8px;height:8px;border-radius:50%;flex:0 0 auto;background:var(--bad);
+  box-shadow:0 0 0 3px rgba(231,133,124,.16);
+}
+.svc-chip.is-on{border-color:rgba(76,195,138,.28)}
+.svc-chip.is-on .svc-dot{
+  background:var(--ok);
+  box-shadow:0 0 0 3px rgba(76,195,138,.18),0 0 10px rgba(76,195,138,.55);
+}
+.svc-chip.is-off{color:var(--bad)}
+.svc-label{color:var(--ink-soft);min-width:0;overflow:hidden;text-overflow:ellipsis}
+
+/* ── 아이디어 ── */
+.idea{padding:12px 0;border-bottom:1px solid var(--line)}
+.idea:last-child{border-bottom:0}
+.idea-name{font-weight:800;font-size:13.5px;color:var(--ink)}
+.idea-desc{color:var(--mut);font-size:12.5px;margin-top:3px;line-height:1.5}
+
+/* ── 대화 ── */
+.chat-line{padding:10px 0;border-bottom:1px solid var(--line)}
+.chat-line:last-child{border-bottom:0}
+.chat-who{font-weight:800;font-size:12px}
+.chat-line.is-user .chat-who{color:var(--accent-deep)}
+.chat-line.is-bot .chat-who{color:var(--warn)}
+.chat-when{color:var(--mut);font-size:10.5px;margin-left:7px;font-weight:600}
+.chat-msg{font-size:13px;margin-top:3px;color:var(--ink-soft)}
+.chat-line.is-user .chat-msg{
+  background:var(--accent-soft);border-radius:4px 14px 14px 14px;
+  padding:7px 12px;display:inline-block;
+}
+
+/* ── 태그 ── */
+.tag{
+  display:inline-block;font-size:12px;font-weight:700;color:var(--accent-deep);
+  background:var(--accent-soft);border-radius:999px;padding:4px 12px;margin:0 6px 7px 0;
+}

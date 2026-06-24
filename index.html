@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>짭비스 대시보드</title>
+<!-- 스킨은 이 link 의 href 만 바뀐다. 데이터/마크업은 그대로 (단방향) -->
+<link id="skin-css" rel="stylesheet" href="skins/white1.css">
+<!-- 크롬(스킨 전환 버튼): 스킨과 무관하게 항상 동일. 맨 위 오른쪽 고정. -->
+<style>
+.skin-pick{position:fixed;top:9px;right:11px;z-index:60}
+.skin-toggle{width:34px;height:34px;border-radius:50%;cursor:pointer;line-height:1;font-size:15px;
+  border:1px solid rgba(127,127,127,.4);background:rgba(127,127,127,.18);backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.skin-toggle:active{transform:scale(.94)}
+.skin-menu{position:absolute;right:0;top:40px;display:none;flex-direction:column;gap:2px;
+  background:#fff;border:1px solid rgba(0,0,0,.14);border-radius:11px;padding:5px;min-width:152px;
+  box-shadow:0 12px 32px rgba(0,0,0,.24)}
+.skin-menu.open{display:flex;animation:skinpop .12s ease}
+@keyframes skinpop{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.skin-opt{display:block;width:100%;text-align:left;border:0;background:transparent;cursor:pointer;
+  padding:9px 11px;border-radius:8px;font-size:13px;color:#1a1a1a;white-space:nowrap;font-family:inherit}
+.skin-opt:hover{background:rgba(0,0,0,.06)}
+.skin-opt.is-active{background:#3b5bdb;color:#fff;font-weight:700}
+</style>
+</head>
+<body class="skin-white1">
+<div id="app"><div class="loading">불러오는 중…</div></div>
+<script src="render.js"></script>
+</body>
+</html>
