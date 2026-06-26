@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-26 08:00:25",
- "generated_short": "06/26 08:00",
+ "generated": "2026-06-26 09:00:25",
+ "generated_short": "06/26 09:00",
  "today": "2026-06-26",
  "services": [
   {
@@ -42,91 +42,69 @@
  },
  "imminent": [
   {
-   "when": "06/26 09:00",
-   "rel": "59분 후",
-   "text": "2026-06-26 (금) 09:00 — 과니에게: 최소한의 필요한 회의 참석인원 공유 메일 보내야 한다고 함",
-   "unit": "reminder-guani-attendee-mail-20260626.timer"
-  },
-  {
    "when": "06/29 09:00",
-   "rel": "3일 0시간 후",
+   "rel": "2일 23시간 후",
    "text": "2026-06-29 (월) 09:00 — 그리드→클라 시차 고려해서 각 클라에서 실시간 킬캐치 이벤트 보장하는지 논의 필요",
    "unit": "reminder-killcatch-latency-20260629.timer"
   }
  ],
  "reminders": [
   {
-   "when": "06/26 09:00",
-   "rel": "59분 후",
-   "text": "2026-06-26 (금) 09:00 — 과니에게: 최소한의 필요한 회의 참석인원 공유 메일 보내야 한다고 함",
-   "unit": "reminder-guani-attendee-mail-20260626.timer"
-  },
-  {
    "when": "06/29 09:00",
-   "rel": "3일 0시간 후",
+   "rel": "2일 23시간 후",
    "text": "2026-06-29 (월) 09:00 — 그리드→클라 시차 고려해서 각 클라에서 실시간 킬캐치 이벤트 보장하는지 논의 필요",
    "unit": "reminder-killcatch-latency-20260629.timer"
   }
  ],
  "crons": [
   {
-   "when": "06/26 08:05",
+   "when": "06/26 09:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "06/26 08:10",
-   "rel": "9분 후",
-   "name": "makenovel-watch"
-  },
-  {
-   "when": "06/26 09:00",
-   "rel": "59분 후",
-   "name": "ideas-todos"
-  },
-  {
    "when": "06/26 09:30",
-   "rel": "1시간 29분 후",
+   "rel": "29분 후",
    "name": "stocks"
   },
   {
    "when": "06/26 13:00",
-   "rel": "4시간 59분 후",
+   "rel": "3시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "06/26 23:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "06/27 07:00",
-   "rel": "22시간 59분 후",
+   "rel": "21시간 59분 후",
    "name": "weather"
   },
   {
    "when": "06/27 10:00",
-   "rel": "1일 1시간 후",
+   "rel": "1일 0시간 후",
    "name": "makenovel"
   },
   {
    "when": "06/27 11:00",
-   "rel": "1일 2시간 후",
+   "rel": "1일 1시간 후",
    "name": "lotto-am"
   },
   {
    "when": "06/27 18:00",
-   "rel": "1일 9시간 후",
+   "rel": "1일 8시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "06/28 21:00",
-   "rel": "2일 12시간 후",
+   "rel": "2일 11시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "07/01 09:00",
-   "rel": "5일 0시간 후",
+   "rel": "4일 23시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -138,6 +116,16 @@
    "when": "—",
    "rel": "—",
    "name": "healthcheck"
+  },
+  {
+   "when": "—",
+   "rel": "—",
+   "name": "ideas-todos"
+  },
+  {
+   "when": "—",
+   "rel": "—",
+   "name": "makenovel-watch"
   }
  ],
  "todos": [
