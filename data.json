@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-27 10:00:25",
- "generated_short": "06/27 10:00",
+ "generated": "2026-06-27 11:00:25",
+ "generated_short": "06/27 11:00",
  "today": "2026-06-27",
  "services": [
   {
@@ -43,7 +43,7 @@
  "imminent": [
   {
    "when": "06/29 09:00",
-   "rel": "1일 22시간 후",
+   "rel": "1일 21시간 후",
    "text": "2026-06-29 (월) 09:00 — 그리드→클라 시차 고려해서 각 클라에서 실시간 킬캐치 이벤트 보장하는지 논의 필요",
    "unit": "reminder-killcatch-latency-20260629.timer"
   }
@@ -51,61 +51,61 @@
  "reminders": [
   {
    "when": "06/29 09:00",
-   "rel": "1일 22시간 후",
+   "rel": "1일 21시간 후",
    "text": "2026-06-29 (월) 09:00 — 그리드→클라 시차 고려해서 각 클라에서 실시간 킬캐치 이벤트 보장하는지 논의 필요",
    "unit": "reminder-killcatch-latency-20260629.timer"
   }
  ],
  "crons": [
   {
-   "when": "06/27 10:05",
+   "when": "06/27 11:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "06/27 11:00",
-   "rel": "59분 후",
-   "name": "lotto-am"
-  },
-  {
    "when": "06/27 13:00",
-   "rel": "2시간 59분 후",
+   "rel": "1시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "06/27 18:00",
-   "rel": "7시간 59분 후",
+   "rel": "6시간 59분 후",
    "name": "lotto-pm"
   },
   {
    "when": "06/27 23:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "06/28 07:00",
-   "rel": "20시간 59분 후",
+   "rel": "19시간 59분 후",
    "name": "weather"
   },
   {
    "when": "06/28 09:00",
-   "rel": "22시간 59분 후",
+   "rel": "21시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "06/28 09:30",
-   "rel": "23시간 29분 후",
+   "rel": "22시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "06/28 21:00",
-   "rel": "1일 10시간 후",
+   "rel": "1일 9시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "07/01 09:00",
-   "rel": "3일 22시간 후",
+   "rel": "3일 21시간 후",
    "name": "chief-biweekly"
+  },
+  {
+   "when": "07/04 10:00",
+   "rel": "6일 22시간 후",
+   "name": "makenovel"
   },
   {
    "when": "—",
@@ -120,12 +120,12 @@
   {
    "when": "—",
    "rel": "—",
-   "name": "makenovel-watch"
+   "name": "lotto-am"
   },
   {
    "when": "—",
    "rel": "—",
-   "name": "makenovel"
+   "name": "makenovel-watch"
   }
  ],
  "todos": [
