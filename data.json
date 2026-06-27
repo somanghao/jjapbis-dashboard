@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-27 12:00:25",
- "generated_short": "06/27 12:00",
+ "generated": "2026-06-27 13:00:25",
+ "generated_short": "06/27 13:00",
  "today": "2026-06-27",
  "services": [
   {
@@ -43,7 +43,7 @@
  "imminent": [
   {
    "when": "06/29 09:00",
-   "rel": "1일 20시간 후",
+   "rel": "1일 19시간 후",
    "text": "2026-06-29 (월) 09:00 — 그리드→클라 시차 고려해서 각 클라에서 실시간 킬캐치 이벤트 보장하는지 논의 필요",
    "unit": "reminder-killcatch-latency-20260629.timer"
   }
@@ -51,70 +51,60 @@
  "reminders": [
   {
    "when": "06/29 09:00",
-   "rel": "1일 20시간 후",
+   "rel": "1일 19시간 후",
    "text": "2026-06-29 (월) 09:00 — 그리드→클라 시차 고려해서 각 클라에서 실시간 킬캐치 이벤트 보장하는지 논의 필요",
    "unit": "reminder-killcatch-latency-20260629.timer"
   }
  ],
  "crons": [
   {
-   "when": "06/27 12:05",
+   "when": "06/27 13:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "06/27 12:10",
-   "rel": "9분 후",
-   "name": "makenovel-watch"
-  },
-  {
-   "when": "06/27 13:00",
-   "rel": "59분 후",
-   "name": "lunch"
-  },
-  {
    "when": "06/27 18:00",
-   "rel": "5시간 59분 후",
+   "rel": "4시간 59분 후",
    "name": "lotto-pm"
   },
   {
    "when": "06/27 23:00",
-   "rel": "10시간 59분 후",
+   "rel": "9시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "06/28 07:00",
-   "rel": "18시간 59분 후",
+   "rel": "17시간 59분 후",
    "name": "weather"
   },
   {
    "when": "06/28 09:00",
-   "rel": "20시간 59분 후",
+   "rel": "19시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "06/28 09:30",
-   "rel": "21시간 29분 후",
+   "rel": "20시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "06/28 21:00",
-   "rel": "1일 8시간 후",
+   "rel": "1일 7시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "07/01 09:00",
-   "rel": "3일 20시간 후",
+   "rel": "3일 19시간 후",
    "name": "chief-biweekly"
   },
   {
    "when": "07/04 10:00",
-   "rel": "6일 21시간 후",
+   "rel": "6일 20시간 후",
    "name": "makenovel"
   },
   {
    "when": "07/04 11:00",
-   "rel": "6일 22시간 후",
+   "rel": "6일 21시간 후",
    "name": "lotto-am"
   },
   {
@@ -126,6 +116,16 @@
    "when": "—",
    "rel": "—",
    "name": "healthcheck"
+  },
+  {
+   "when": "—",
+   "rel": "—",
+   "name": "lunch"
+  },
+  {
+   "when": "—",
+   "rel": "—",
+   "name": "makenovel-watch"
   }
  ],
  "todos": [
@@ -308,7 +308,88 @@
    ]
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "아니면 맥 ~/.cloudflared/ 의 cert.pem 하나만 NucBox로 안전하게 복사해주면 로그인 클릭도 건너뛰고 내가 전부 처리할 수 있어. 어느 쪽으로 갈까?"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "1번 추천. 내가 NucBox에 cloudflared 설치하고 config까지 다 잡을 수 있는데, 딱 한 단계만 네가 직접 해야 해 — `cloudflared tunnel login` 브라우저 OAuth(samohao@sooplive.com 클릭). 이건 자동화 불가야. "
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "2. 맥 터널 그대로 두고 dash.samohao.cc → NucBox의 Tailscale IP:8090 으로 ingress 추가. 맥이 항상 켜져 있어야 함."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "1. NucBox에 cloudflared 깔고 여기서 dash 터널을 돌린다 (추천). 대시보드랑 같은 기계라 localhost:8090 바로 꽂으면 끝. NucBox는 상시 켜져 있으니 안정적."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "제일 깔끔한 길은 둘 중 하나야:"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "그래서 네가 붙여준 Windows 가이드는 이 상황엔 안 맞아. 그건 윈도우 PC에 새 터널 까는 절차인데, 우리 대시보드는 윈도우가 아니라 NucBox에 있거든."
+  },
+  {
+   "ts": "12:24:30",
+   "who": "짭비스",
+   "msg": "확인했어. 핵심부터 — 대시보드(8090)는 지금 이 NucBox(리눅스)에서 돌고 있어. python3가 8090 물고 있고 살아있음. 근데 cloudflared는 이 NucBox엔 안 깔려 있고, 터널 도는 건 맥(/opt/homebrew)이야. 즉 대시보드 기계 ≠ 터널 기계."
+  },
+  {
+   "ts": "12:24:30",
+   "who": "사용자",
+   "msg": "Windows 설정 단계 (관리자 PowerShell)   아래 placeholder를 정해서 진행합니다 — 추천값을 괄호에 넣었습니다:   - <NAME> 터널 이름 (예: winpc)   - <SUB> 서브도메인 (예: win → 최종 URL win.samohao.cc)   - <PORT> 공개할 로컬 앱 포트 (예: 3000)   - <USER> Windows 사용자명   1) cloudflared 설치   winget install --id Cloudflare.cloudflared   # winget 없으면: https://…"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "서브도메인은 dash.samohao.cc로 갈까, 아니면 다른 이름 원해?"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "근데 하나 확인할 게 있어 — 그 cloudflared가 `/opt/homebrew/bin`이라 맥에 깔린 거야. 지금 내가 붙어있는 건 리눅스 NucBox(/home/samohao)라 터널 도는 맥이랑 다른 기계야. 대시보드(8090)가 맥에서 도는지 NucBox에서 도는지 알려주면, 같은 기계면 바로 config 수정해서 올리고, 다른 기계면 8090을 터널 머신에서 접근되게 하는 것부터 잡아야 해."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "3. 터널 재시작"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "2. DNS 라우트 등록 — `cloudflared tunnel route dns lck dash.samohao.cc`"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "1. config.yml ingress에 한 줄 추가 — `dash.samohao.cc → http://localhost:8090`"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "할 일은 3개:"
+  },
+  {
+   "ts": "12:23:23",
+   "who": "짭비스",
+   "msg": "좋아, 대시보드도 같은 터널에 얹으면 돼. 지금 lck 터널은 ingress 규칙이 하나(lck.samohao.cc → localhost:3000)뿐이라, 대시보드(8090 포트)용 호스트네임만 추가하면 끝이야."
+  },
+  {
+   "ts": "12:23:23",
+   "who": "사용자",
+   "msg": "내가 클라우드 플레어 사용중인데 대시보드도 여기에 올리자    내 Cloudflare 정보 (현재 PC)   ┌────────────────────┬───────────────────────────────────────────────────────────────┐   │        항목        │                              값                               │   ├────────────────────┼──────────────────────────────────────────…"
+  }
+ ],
  "wiki": [
   "automation",
   "credentials",
