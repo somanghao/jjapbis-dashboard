@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-29 07:00:25",
- "generated_short": "06/29 07:00",
+ "generated": "2026-06-29 08:00:25",
+ "generated_short": "06/29 08:00",
  "today": "2026-06-29",
  "services": [
   {
@@ -43,7 +43,7 @@
  "imminent": [
   {
    "when": "06/29 09:00",
-   "rel": "1시간 59분 후",
+   "rel": "59분 후",
    "text": "2026-06-29 (월) 09:00 — 그리드→클라 시차 고려해서 각 클라에서 실시간 킬캐치 이벤트 보장하는지 논의 필요",
    "unit": "reminder-killcatch-latency-20260629.timer"
   }
@@ -51,65 +51,70 @@
  "reminders": [
   {
    "when": "06/29 09:00",
-   "rel": "1시간 59분 후",
+   "rel": "59분 후",
    "text": "2026-06-29 (월) 09:00 — 그리드→클라 시차 고려해서 각 클라에서 실시간 킬캐치 이벤트 보장하는지 논의 필요",
    "unit": "reminder-killcatch-latency-20260629.timer"
   }
  ],
  "crons": [
   {
-   "when": "06/29 07:05",
+   "when": "06/29 08:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "06/29 07:10",
+   "when": "06/29 08:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "06/29 09:00",
-   "rel": "1시간 59분 후",
+   "rel": "59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "06/29 09:30",
-   "rel": "2시간 29분 후",
+   "rel": "1시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "06/29 13:00",
-   "rel": "5시간 59분 후",
+   "rel": "4시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "06/29 23:00",
-   "rel": "15시간 59분 후",
+   "rel": "14시간 59분 후",
    "name": "daily-review"
   },
   {
+   "when": "06/30 07:00",
+   "rel": "22시간 59분 후",
+   "name": "weather"
+  },
+  {
    "when": "07/01 09:00",
-   "rel": "2일 1시간 후",
+   "rel": "2일 0시간 후",
    "name": "chief-biweekly"
   },
   {
    "when": "07/04 10:00",
-   "rel": "5일 2시간 후",
+   "rel": "5일 1시간 후",
    "name": "makenovel"
   },
   {
    "when": "07/04 11:00",
-   "rel": "5일 3시간 후",
+   "rel": "5일 2시간 후",
    "name": "lotto-am"
   },
   {
    "when": "07/04 18:00",
-   "rel": "5일 10시간 후",
+   "rel": "5일 9시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "07/05 21:00",
-   "rel": "6일 13시간 후",
+   "rel": "6일 12시간 후",
    "name": "todos-weekly"
   },
   {
@@ -121,11 +126,6 @@
    "when": "—",
    "rel": "—",
    "name": "healthcheck"
-  },
-  {
-   "when": "—",
-   "rel": "—",
-   "name": "weather"
   }
  ],
  "todos": [
