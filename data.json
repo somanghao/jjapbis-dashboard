@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-08 16:00:49",
- "generated_short": "07/08 16:00",
+ "generated": "2026-07-08 17:00:49",
+ "generated_short": "07/08 17:00",
  "today": "2026-07-08",
  "services": [
   {
@@ -44,63 +44,63 @@
  "reminders": [],
  "crons": [
   {
-   "when": "07/08 16:05",
+   "when": "07/08 17:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "07/08 16:10",
+   "when": "07/08 17:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "07/08 23:00",
-   "rel": "6시간 59분 후",
+   "rel": "5시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "07/09 07:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "weather"
   },
   {
    "when": "07/09 09:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "07/09 09:30",
-   "rel": "17시간 29분 후",
+   "rel": "16시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "07/09 13:00",
-   "rel": "20시간 59분 후",
+   "rel": "19시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "07/11 10:00",
-   "rel": "2일 17시간 후",
+   "rel": "2일 16시간 후",
    "name": "makenovel"
   },
   {
    "when": "07/11 11:00",
-   "rel": "2일 18시간 후",
+   "rel": "2일 17시간 후",
    "name": "lotto-am"
   },
   {
    "when": "07/11 18:00",
-   "rel": "3일 1시간 후",
+   "rel": "3일 0시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "07/12 21:00",
-   "rel": "4일 4시간 후",
+   "rel": "4일 3시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "07/15 09:00",
-   "rel": "6일 16시간 후",
+   "rel": "6일 15시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -308,6 +308,36 @@
   }
  ],
  "chat": [
+  {
+   "ts": "16:57:28",
+   "who": "짭비스",
+   "msg": "You've hit your session limit · resets 5:50pm (Asia/Seoul)"
+  },
+  {
+   "ts": "16:57:28",
+   "who": "사용자",
+   "msg": "내일 조로에게 현재 진행 상황 내거 공헌한일 lck를 모르거나 그리드를 모르거나 둘다 몰라도 이해가 되는 뷰어를 만들고 데이터맵을 만들고 했다"
+  },
+  {
+   "ts": "16:55:39",
+   "who": "짭비스",
+   "msg": "You've hit your session limit · resets 5:50pm (Asia/Seoul)"
+  },
+  {
+   "ts": "16:55:39",
+   "who": "사용자",
+   "msg": "내일아침 앱에서 필요한데이터를 역산하여 서버에주고 회의때 개발이슈 문의 그리드에 대해 물어봐라 언제든 개발 팀간 소통 필요하면 최대한 돕겠다 서버분들은 이미 전문가니 잘할거리 믿습니다"
+  },
+  {
+   "ts": "16:23:50",
+   "who": "짭비스",
+   "msg": "You've hit your session limit · resets 5:50pm (Asia/Seoul)"
+  },
+  {
+   "ts": "16:23:50",
+   "who": "사용자",
+   "msg": "내일아침 9시 치로형 설문 뷰리필터 만들것"
+  },
   {
    "ts": "15:20:28",
    "who": "짭비스",
