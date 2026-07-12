@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-12 18:00:49",
- "generated_short": "07/12 18:00",
+ "generated": "2026-07-12 19:00:49",
+ "generated_short": "07/12 19:00",
  "today": "2026-07-12",
  "services": [
   {
@@ -44,63 +44,63 @@
  "reminders": [],
  "crons": [
   {
-   "when": "07/12 18:05",
+   "when": "07/12 19:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "07/12 18:10",
+   "when": "07/12 19:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "07/12 21:00",
-   "rel": "2시간 59분 후",
+   "rel": "1시간 59분 후",
    "name": "todos-weekly"
   },
   {
    "when": "07/12 23:00",
-   "rel": "4시간 59분 후",
+   "rel": "3시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "07/13 07:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "name": "weather"
   },
   {
    "when": "07/13 09:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "07/13 09:30",
-   "rel": "15시간 29분 후",
+   "rel": "14시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "07/13 13:00",
-   "rel": "18시간 59분 후",
+   "rel": "17시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "07/15 09:00",
-   "rel": "2일 14시간 후",
+   "rel": "2일 13시간 후",
    "name": "chief-biweekly"
   },
   {
    "when": "07/18 10:00",
-   "rel": "5일 15시간 후",
+   "rel": "5일 14시간 후",
    "name": "makenovel"
   },
   {
    "when": "07/18 11:00",
-   "rel": "5일 16시간 후",
+   "rel": "5일 15시간 후",
    "name": "lotto-am"
   },
   {
    "when": "07/18 18:00",
-   "rel": "5일 23시간 후",
+   "rel": "5일 22시간 후",
    "name": "lotto-pm"
   },
   {
