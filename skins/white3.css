@@ -39,14 +39,15 @@ body{
   backdrop-filter:saturate(120%) blur(8px);
   padding:18px 20px 10px;
   border-bottom:1px solid var(--line-strong);
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
 }
 .dash-brand{
   font-family:var(--serif);font-weight:900;font-size:23px;
-  letter-spacing:-.01em;line-height:1.05;color:var(--ink);
+  letter-spacing:-.01em;line-height:1.05;color:var(--ink);flex:0 0 auto;
 }
 .dash-gen{
   font-size:10px;color:var(--mut);margin-top:4px;
-  text-transform:uppercase;letter-spacing:.16em;font-weight:600;
+  text-transform:uppercase;letter-spacing:.16em;font-weight:600;flex:0 0 auto;
 }
 .skin-switch{display:flex;gap:7px;margin-top:13px;overflow-x:auto;padding-bottom:3px;-webkit-overflow-scrolling:touch}
 .skin-switch::-webkit-scrollbar{display:none}
@@ -60,6 +61,28 @@ body{
 }
 .skin-btn:hover{color:var(--ink);border-color:var(--ink)}
 .skin-btn.is-active{background:var(--ink);color:#fff;border-color:var(--ink);letter-spacing:.08em}
+.skin-pick{
+  position:relative;display:flex;align-items:center;flex:0 0 auto;gap:4px;
+}
+.skin-toggle{
+  cursor:pointer;border:1px solid var(--line);background:var(--surface);
+  color:var(--ink);font-size:16px;padding:6px 8px;border-radius:2px;
+  transition:.18s ease;flex:0 0 auto;
+}
+.skin-toggle:hover{background:var(--accent-soft);color:var(--accent)}
+.skin-menu{
+  display:none;position:absolute;top:100%;right:0;z-index:20;
+  background:var(--surface);border:1px solid var(--line-strong);border-radius:3px;
+  box-shadow:0 2px 8px rgba(22,24,29,.1);padding:6px;margin-top:4px;flex-direction:column;gap:2px;
+}
+.skin-menu.open{display:flex}
+.skin-opt{
+  cursor:pointer;border:1px solid var(--line);background:var(--surface);
+  color:var(--ink);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;
+  padding:6px 13px;border-radius:3px;white-space:nowrap;transition:.18s ease;
+}
+.skin-opt:hover{background:var(--accent-soft);color:var(--accent)}
+.skin-opt.is-active{background:var(--accent);color:#fff;border-color:var(--accent)}
 
 /* ── 탭 ── */
 .tabbar{

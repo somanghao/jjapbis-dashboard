@@ -27,7 +27,7 @@
     { id: "alarm", ico: "⏰" },
     { id: "todo", ico: "✅" },
     { id: "idea", ico: "💡" },
-    { id: "wiki", ico: "📚" },
+    { id: "pl", ico: "📋" },
     { id: "makenovel", ico: "📖" },
   ];
 
@@ -123,9 +123,6 @@
         return '<div class="idea"><div class="idea-name">' + esc(i.name) + '</div><div class="idea-desc">' + esc(i.desc) + "</div></div>";
       }).join("") : empty("없음"));
 
-    P.wiki = cardHTML("wiki", "📚 지식 위키", d.wiki.length,
-      d.wiki.length ? d.wiki.map(function (w) { return '<span class="tag">' + esc(w) + "</span>"; }).join("") : empty("없음"));
-
     var mn = d.makenovel || { todo: [], in_progress: [], done: [], available: false };
     function mnRows(list) {
       if (!list || !list.length) return empty("없음");
@@ -162,6 +159,17 @@
       cardHTML("mn_prog", "🔄 진행중", mn.in_progress.length, mnRows(mn.in_progress)) +
       cardHTML("mn_todo", "📋 할일", mn.todo.length, mnRows(mn.todo)) +
       cardHTML("mn_done", "✅ 한일", mn.done.length, mnRows(mn.done));
+
+    var pl = d.pl || { done: [], todo: [], feedback: [], missed: [], next: [] };
+    function plRows(list, label) {
+      if (!list || !list.length) return '<div class="sub">— ' + esc(label) + ' 없음</div>';
+      return list.map(function (it) { return '<div class="row"><div class="row-text">' + esc(it) + "</div></div>"; }).join("");
+    }
+    P.pl = cardHTML("pl_done", "✅ 잘한 일", pl.done.length, plRows(pl.done, "잘한 일")) +
+      cardHTML("pl_todo", "📋 해야 할 일", pl.todo.length, plRows(pl.todo, "해야 할 일")) +
+      cardHTML("pl_feedback", "⚠️ 지적당한 점", pl.feedback.length, plRows(pl.feedback, "지적")) +
+      cardHTML("pl_missed", "❌ 못한 일", pl.missed.length, plRows(pl.missed, "못한 일")) +
+      cardHTML("pl_next", "🎯 내일 할 일", pl.next.length, plRows(pl.next, "내일"));
     return P;
   }
   function todoCount(d) { var n = 0; d.todos.forEach(function (s) { n += s.items.length; }); return n; }
@@ -169,7 +177,6 @@
     if (id === "alarm") return d.reminders.length;
     if (id === "todo") return todoCount(d);
     if (id === "idea") return d.ideas.length;
-    if (id === "wiki") return d.wiki.length;
     if (id === "makenovel") { var m = d.makenovel || { todo: [], in_progress: [] }; return (m.todo.length + m.in_progress.length) || ""; }
     return "";
   }
@@ -189,10 +196,11 @@
     }).join("");
 
     return '<div class="dash">' +
+      '<header class="dash-top"><div class="dash-brand">🤖 짭비스</div>' +
+      '<div class="dash-gen">' + esc(d.generated_short) + " 갱신</div>" +
       '<div class="skin-pick"><button class="skin-toggle" id="skinToggle" title="스킨 전환" aria-label="스킨 전환">🎨</button>' +
       '<div class="skin-menu" id="skinMenu">' + skinOpts + "</div></div>" +
-      '<header class="dash-top"><div class="dash-brand">🤖 짭비스</div>' +
-      '<div class="dash-gen">' + esc(d.generated_short) + " 갱신</div></header>" +
+      '</header>' +
       '<nav class="tabbar">' + tabs + "</nav>" +
       '<main class="panels">' + panels + "</main></div>";
   }
@@ -206,7 +214,7 @@
   }
   function applySkin(id) {
     if (!SKINS.some(function (s) { return s.id === id; })) id = SKINS[0].id;
-    document.getElementById("skin-css").setAttribute("href", "skins/" + id + ".css");
+    document.getElementById("skin-css").setAttribute("href", "skins/" + id + ".css?ts=" + Date.now());
     document.body.className = "skin-" + id;
     var bs = document.querySelectorAll(".skin-opt"), i;
     for (i = 0; i < bs.length; i++) bs[i].classList.toggle("is-active", bs[i].dataset.skin === id);
@@ -233,7 +241,7 @@
     document.getElementById("app").innerHTML = buildShell(d);
     wire();
     activateTab(ls("jjtab") || "overview");
-    applySkin(ls("jjskin") || "white1");
+    applySkin(ls("jjskin") || "webtoon");
   }
 
   function load() {

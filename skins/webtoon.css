@@ -61,6 +61,11 @@ body{
   padding:13px 16px 10px;
   border-bottom:var(--bd-fat);
   box-shadow:0 4px 0 rgba(26,26,26,.12);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  flex-wrap:nowrap;
 }
 .dash-brand{
   font-family:var(--disp);
@@ -68,6 +73,7 @@ body{
   text-shadow:2px 2px 0 #fff, 3px 3px 0 rgba(26,26,26,.25);
   transform:rotate(-1.5deg);
   display:inline-block;
+  flex:0 0 auto;
 }
 .dash-gen{
   font-family:var(--disp);
@@ -75,6 +81,7 @@ body{
   background:#fff;border:2px solid var(--ink);border-radius:999px;
   padding:1px 9px;display:inline-block;box-shadow:var(--pop-sm);
   transform:rotate(1deg);
+  flex:0 0 auto;
 }
 .skin-switch{
   display:flex;gap:8px;margin-top:12px;overflow-x:auto;
@@ -93,6 +100,66 @@ body{
 .skin-btn.is-active{            /* ★ 선택 표시 */
   background:var(--coral);color:#fff;
   box-shadow:var(--pop);transform:translate(-1px,-1px) rotate(-2deg);
+}
+.skin-pick{
+  position:relative;
+  display:flex;
+  align-items:center;
+  flex:0 0 auto;
+}
+.skin-toggle{
+  cursor:pointer;
+  border:var(--bd);
+  background:#fff;
+  color:var(--ink);
+  font-family:var(--disp);
+  font-size:18px;
+  padding:5px 8px;
+  border-radius:8px;
+  box-shadow:var(--pop-sm);
+  transition:transform .12s, box-shadow .12s;
+}
+.skin-toggle:hover{
+  transform:translate(-1px,-1px);
+  box-shadow:var(--pop);
+}
+.skin-menu{
+  display:none;
+  position:absolute;
+  top:100%;
+  right:0;
+  z-index:20;
+  background:#fff;
+  border:var(--bd);
+  border-radius:12px;
+  box-shadow:var(--pop-lg);
+  padding:8px;
+  margin-top:6px;
+  flex-direction:column;
+  gap:4px;
+}
+.skin-menu.open{
+  display:flex;
+}
+.skin-opt{
+  cursor:pointer;
+  border:var(--bd);
+  background:#fff;
+  color:var(--ink);
+  font-family:var(--disp);
+  font-size:13px;
+  padding:8px 12px;
+  border-radius:8px;
+  white-space:nowrap;
+  transition:background .12s;
+}
+.skin-opt:hover{
+  background:var(--yellow);
+}
+.skin-opt.is-active{
+  background:var(--coral);
+  color:#fff;
+  font-weight:700;
 }
 
 /* ── 탭 ── */
