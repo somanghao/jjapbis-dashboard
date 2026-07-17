@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-17 19:00:48",
- "generated_short": "07/17 19:00",
+ "generated": "2026-07-17 20:00:49",
+ "generated_short": "07/17 20:00",
  "today": "2026-07-17",
  "services": [
   {
@@ -43,7 +43,7 @@
  "imminent": [
   {
    "when": "07/20 09:00",
-   "rel": "2일 13시간 후",
+   "rel": "2일 12시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
@@ -51,70 +51,70 @@
  "reminders": [
   {
    "when": "07/20 09:00",
-   "rel": "2일 13시간 후",
+   "rel": "2일 12시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "07/17 19:05",
+   "when": "07/17 20:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "07/17 19:10",
+   "when": "07/17 20:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "07/17 23:00",
-   "rel": "3시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "07/18 07:00",
-   "rel": "11시간 59분 후",
+   "rel": "10시간 59분 후",
    "name": "weather"
   },
   {
    "when": "07/18 09:00",
-   "rel": "13시간 59분 후",
+   "rel": "12시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "07/18 09:30",
-   "rel": "14시간 29분 후",
+   "rel": "13시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "07/18 10:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "makenovel"
   },
   {
    "when": "07/18 11:00",
-   "rel": "15시간 59분 후",
+   "rel": "14시간 59분 후",
    "name": "lotto-am"
   },
   {
    "when": "07/18 13:00",
-   "rel": "17시간 59분 후",
+   "rel": "16시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "07/18 18:00",
-   "rel": "22시간 59분 후",
+   "rel": "21시간 59분 후",
    "name": "lotto-pm"
   },
   {
    "when": "07/19 21:00",
-   "rel": "2일 1시간 후",
+   "rel": "2일 0시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "07/22 09:00",
-   "rel": "4일 13시간 후",
+   "rel": "4일 12시간 후",
    "name": "chief-biweekly"
   },
   {
