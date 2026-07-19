@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-19 20:00:49",
- "generated_short": "07/19 20:00",
+ "generated": "2026-07-19 21:00:49",
+ "generated_short": "07/19 21:00",
  "today": "2026-07-19",
  "services": [
   {
@@ -43,7 +43,7 @@
  "imminent": [
   {
    "when": "07/20 09:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
@@ -51,70 +51,65 @@
  "reminders": [
   {
    "when": "07/20 09:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "07/19 20:05",
+   "when": "07/19 21:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "07/19 20:10",
+   "when": "07/19 21:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
-   "when": "07/19 21:00",
-   "rel": "59분 후",
-   "name": "todos-weekly"
-  },
-  {
    "when": "07/19 23:00",
-   "rel": "2시간 59분 후",
+   "rel": "1시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "07/20 07:00",
-   "rel": "10시간 59분 후",
+   "rel": "9시간 59분 후",
    "name": "weather"
   },
   {
    "when": "07/20 09:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "07/20 09:30",
-   "rel": "13시간 29분 후",
+   "rel": "12시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "07/20 13:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "07/22 09:00",
-   "rel": "2일 12시간 후",
+   "rel": "2일 11시간 후",
    "name": "chief-biweekly"
   },
   {
    "when": "07/25 10:00",
-   "rel": "5일 13시간 후",
+   "rel": "5일 12시간 후",
    "name": "makenovel"
   },
   {
    "when": "07/25 11:00",
-   "rel": "5일 14시간 후",
+   "rel": "5일 13시간 후",
    "name": "lotto-am"
   },
   {
    "when": "07/25 18:00",
-   "rel": "5일 21시간 후",
+   "rel": "5일 20시간 후",
    "name": "lotto-pm"
   },
   {
@@ -126,6 +121,11 @@
    "when": "—",
    "rel": "—",
    "name": "healthcheck"
+  },
+  {
+   "when": "—",
+   "rel": "—",
+   "name": "todos-weekly"
   }
  ],
  "todos": [
