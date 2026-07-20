@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-20 09:00:49",
- "generated_short": "07/20 09:00",
+ "generated": "2026-07-20 10:00:49",
+ "generated_short": "07/20 10:00",
  "today": "2026-07-20",
  "services": [
   {
@@ -40,62 +40,76 @@
   "done": 8,
   "failed": 0
  },
- "imminent": [],
- "reminders": [],
+ "imminent": [
+  {
+   "when": "07/27 09:00",
+   "rel": "6일 22시간 후",
+   "text": "",
+   "unit": "reminder-dan-sean-doc-biweekly.timer"
+  }
+ ],
+ "reminders": [
+  {
+   "when": "07/27 09:00",
+   "rel": "6일 22시간 후",
+   "text": "",
+   "unit": "reminder-dan-sean-doc-biweekly.timer"
+  }
+ ],
  "crons": [
   {
-   "when": "07/20 09:05",
+   "when": "07/20 10:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "07/20 09:10",
-   "rel": "9분 후",
-   "name": "makenovel-watch"
-  },
-  {
-   "when": "07/20 09:30",
-   "rel": "29분 후",
-   "name": "stocks"
-  },
-  {
    "when": "07/20 13:00",
-   "rel": "3시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "07/20 23:00",
-   "rel": "13시간 59분 후",
+   "rel": "12시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "07/21 07:00",
-   "rel": "21시간 59분 후",
+   "rel": "20시간 59분 후",
    "name": "weather"
   },
   {
+   "when": "07/21 09:00",
+   "rel": "22시간 59분 후",
+   "name": "ideas-todos"
+  },
+  {
+   "when": "07/21 09:30",
+   "rel": "23시간 29분 후",
+   "name": "stocks"
+  },
+  {
    "when": "07/22 09:00",
-   "rel": "1일 23시간 후",
+   "rel": "1일 22시간 후",
    "name": "chief-biweekly"
   },
   {
    "when": "07/25 10:00",
-   "rel": "5일 0시간 후",
+   "rel": "4일 23시간 후",
    "name": "makenovel"
   },
   {
    "when": "07/25 11:00",
-   "rel": "5일 1시간 후",
+   "rel": "5일 0시간 후",
    "name": "lotto-am"
   },
   {
    "when": "07/25 18:00",
-   "rel": "5일 8시간 후",
+   "rel": "5일 7시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "07/26 21:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 10시간 후",
    "name": "todos-weekly"
   },
   {
@@ -111,7 +125,7 @@
   {
    "when": "—",
    "rel": "—",
-   "name": "ideas-todos"
+   "name": "makenovel-watch"
   }
  ],
  "todos": [
@@ -318,7 +332,33 @@
    ]
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "그리고 아까 네가 지적한 그 타이머 리스트 쭉 나오는 거 — 맞아, 그거 알림 보고에 굳이 다 뿌릴 필요 없지. 다음부턴 그 원시 타이머 목록 덤프는 빼고 사람이 볼 요약만 보낼게. 필요하면 그 출력 내보내는 부분 어디서 나오는지 찾아서 아예 잘라둘까?"
+  },
+  {
+   "ts": "09:10:18",
+   "who": "짭비스",
+   "msg": "그건 내 쪽 잘못이 아니라 Claude API 서버가 잠깐 삐끗한 거야. 500은 앤트로픽 서버측 일시적 오류라 보통 몇 초 뒤면 풀려. 지금은 정상 응답되고 있고."
+  },
+  {
+   "ts": "09:10:18",
+   "who": "사용자",
+   "msg": "왜 500에러야?"
+  },
+  {
+   "ts": "09:03:57",
+   "who": "짭비스",
+   "msg": "API Error: 500 Internal server error. This is a server-side issue, usually temporary — try again in a moment. If it persists, check https://status.claude.com."
+  },
+  {
+   "ts": "09:03:57",
+   "who": "사용자",
+   "msg": "아래내용 필요없잖아 ...[알림] - - - Fri — reminder-guani-attendee-mail-20260626.timer - - - Fri — reminder-morning-tasks-20260619.timer - - - Mon — jjapbis-cron-dashboard.timer - - - Mon — jjapbis-cron-healthcheck.timer - - - Mon — jjapbis-cron-ideas-todos.timer - - - Mon — reminder-chief-meeting-day-20260622.…"
+  }
+ ],
  "makenovel": {
   "todo": [],
   "in_progress": [],
