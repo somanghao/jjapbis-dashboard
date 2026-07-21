@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-21 13:00:49",
- "generated_short": "07/21 13:00",
+ "generated": "2026-07-21 14:00:49",
+ "generated_short": "07/21 14:00",
  "today": "2026-07-21",
  "services": [
   {
@@ -43,73 +43,90 @@
  "imminent": [
   {
    "when": "07/27 09:00",
-   "rel": "5일 19시간 후",
+   "rel": "5일 18시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
+  },
+  {
+   "when": "07/28 09:00",
+   "rel": "6일 18시간 후",
+   "text": "",
+   "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "reminders": [
   {
    "when": "07/27 09:00",
-   "rel": "5일 19시간 후",
+   "rel": "5일 18시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
+  },
+  {
+   "when": "07/28 09:00",
+   "rel": "6일 18시간 후",
+   "text": "",
+   "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "07/21 13:05",
+   "when": "07/21 14:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "07/21 13:10",
+   "when": "07/21 14:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "07/21 23:00",
-   "rel": "9시간 59분 후",
+   "rel": "8시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "07/22 07:00",
-   "rel": "17시간 59분 후",
+   "rel": "16시간 59분 후",
    "name": "weather"
   },
   {
    "when": "07/22 09:00",
-   "rel": "19시간 59분 후",
+   "rel": "18시간 59분 후",
    "name": "chief-biweekly"
   },
   {
    "when": "07/22 09:00",
-   "rel": "19시간 59분 후",
+   "rel": "18시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "07/22 09:30",
-   "rel": "20시간 29분 후",
+   "rel": "19시간 29분 후",
    "name": "stocks"
   },
   {
+   "when": "07/22 13:00",
+   "rel": "22시간 59분 후",
+   "name": "lunch"
+  },
+  {
    "when": "07/25 10:00",
-   "rel": "3일 20시간 후",
+   "rel": "3일 19시간 후",
    "name": "makenovel"
   },
   {
    "when": "07/25 11:00",
-   "rel": "3일 21시간 후",
+   "rel": "3일 20시간 후",
    "name": "lotto-am"
   },
   {
    "when": "07/25 18:00",
-   "rel": "4일 4시간 후",
+   "rel": "4일 3시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "07/26 21:00",
-   "rel": "5일 7시간 후",
+   "rel": "5일 6시간 후",
    "name": "todos-weekly"
   },
   {
@@ -121,11 +138,6 @@
    "when": "—",
    "rel": "—",
    "name": "healthcheck"
-  },
-  {
-   "when": "—",
-   "rel": "—",
-   "name": "lunch"
   }
  ],
  "todos": [
@@ -180,6 +192,7 @@
     "2026-05-13 (수) 09:00 — 라이브 메인에이전트 + 채팅/멀티뷰 등 서브에이전트 구조 시각화해서 보여줄 것",
     "2026-05-06 (수) 09:00 — 릴리즈 일주일 전, 머지 알림/작업 확인/캐치/그리드리스트 작업",
     "2026-05-06 (수) 10:00 — 리플레이 아이디어 공유 3건",
+    "격주 화요일 09:00 (2026-07-21 시작, 첫 발화 2026-08-04) — 치프회의 메일 수신자에 치프+조로 추가하도록 수정 (reminder-chief-mail-recipients-biweekly.timer, 상시 systemd, 14일 게이트 스크립트)",
     "격주 월요일 09:00 (2026-07-20 시작) — 댄/션 문서 확인 후 파트장에게 공유할 것 (reminder-dan-sean-doc-biweekly.timer, 상시 systemd, 14일 게이트 스크립트)",
     "매주 일요일 21:00 — 이 할일 리스트 통째로 텔레그램 발송 (todos-weekly.timer)"
    ]
@@ -336,7 +349,33 @@
    ]
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "기준일이 오늘(7/21)인데 오늘 9시는 이미 지났으니, 첫 발화는 2주 뒤인 8/4(화) 09:00부터야."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "이건 세션 알림이 아니라 상시 systemd 타이머(14일 게이트 스크립트)로 만들어서 데몬 죽어도 안 날아가. 댄/션 격주 알림이랑 같은 방식이야."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "격주 화요일 09:00 알림 박아놨어 — \"치프회의 메일 수신자에 치프 + 조로 추가하도록 수정\""
+  },
+  {
+   "ts": "13:50:49",
+   "who": "짭비스",
+   "msg": "등록 완료 👍"
+  },
+  {
+   "ts": "13:50:49",
+   "who": "사용자",
+   "msg": "오늘부터 격주 화요일 오전 9시에 주기적으로 나에게 치프회의 메일 수신자에 치프 + 조로 추가하도록 수정"
+  }
+ ],
  "makenovel": {
   "todo": [],
   "in_progress": [],
