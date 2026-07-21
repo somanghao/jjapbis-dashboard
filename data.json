@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-21 08:00:49",
- "generated_short": "07/21 08:00",
+ "generated": "2026-07-21 09:00:49",
+ "generated_short": "07/21 09:00",
  "today": "2026-07-21",
  "services": [
   {
@@ -43,7 +43,7 @@
  "imminent": [
   {
    "when": "07/27 09:00",
-   "rel": "6일 0시간 후",
+   "rel": "5일 23시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
@@ -51,70 +51,65 @@
  "reminders": [
   {
    "when": "07/27 09:00",
-   "rel": "6일 0시간 후",
+   "rel": "5일 23시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "07/21 08:05",
+   "when": "07/21 09:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "07/21 08:10",
+   "when": "07/21 09:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
-   "when": "07/21 09:00",
-   "rel": "59분 후",
-   "name": "ideas-todos"
-  },
-  {
    "when": "07/21 09:30",
-   "rel": "1시간 29분 후",
+   "rel": "29분 후",
    "name": "stocks"
   },
   {
    "when": "07/21 13:00",
-   "rel": "4시간 59분 후",
+   "rel": "3시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "07/21 23:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "07/22 07:00",
-   "rel": "22시간 59분 후",
+   "rel": "21시간 59분 후",
    "name": "weather"
   },
   {
    "when": "07/22 09:00",
-   "rel": "1일 0시간 후",
+   "rel": "23시간 59분 후",
    "name": "chief-biweekly"
   },
   {
    "when": "07/25 10:00",
-   "rel": "4일 1시간 후",
+   "rel": "4일 0시간 후",
    "name": "makenovel"
   },
   {
    "when": "07/25 11:00",
-   "rel": "4일 2시간 후",
+   "rel": "4일 1시간 후",
    "name": "lotto-am"
   },
   {
    "when": "07/25 18:00",
-   "rel": "4일 9시간 후",
+   "rel": "4일 8시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "07/26 21:00",
-   "rel": "5일 12시간 후",
+   "rel": "5일 11시간 후",
    "name": "todos-weekly"
   },
   {
@@ -126,6 +121,11 @@
    "when": "—",
    "rel": "—",
    "name": "healthcheck"
+  },
+  {
+   "when": "—",
+   "rel": "—",
+   "name": "ideas-todos"
   }
  ],
  "todos": [
