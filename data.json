@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-22 12:00:48",
- "generated_short": "07/22 12:00",
+ "generated": "2026-07-22 13:00:49",
+ "generated_short": "07/22 13:00",
  "today": "2026-07-22",
  "services": [
   {
@@ -43,13 +43,13 @@
  "imminent": [
   {
    "when": "07/27 09:00",
-   "rel": "4일 20시간 후",
+   "rel": "4일 19시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "07/28 09:00",
-   "rel": "5일 20시간 후",
+   "rel": "5일 19시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
@@ -57,76 +57,71 @@
  "reminders": [
   {
    "when": "07/27 09:00",
-   "rel": "4일 20시간 후",
+   "rel": "4일 19시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "07/28 09:00",
-   "rel": "5일 20시간 후",
+   "rel": "5일 19시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "07/22 12:05",
+   "when": "07/22 13:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "07/22 12:10",
+   "when": "07/22 13:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
-   "when": "07/22 13:00",
-   "rel": "59분 후",
-   "name": "lunch"
-  },
-  {
    "when": "07/22 23:00",
-   "rel": "10시간 59분 후",
+   "rel": "9시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "07/23 07:00",
-   "rel": "18시간 59분 후",
+   "rel": "17시간 59분 후",
    "name": "weather"
   },
   {
    "when": "07/23 09:00",
-   "rel": "20시간 59분 후",
+   "rel": "19시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "07/23 09:30",
-   "rel": "21시간 29분 후",
+   "rel": "20시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "07/25 10:00",
-   "rel": "2일 21시간 후",
+   "rel": "2일 20시간 후",
    "name": "makenovel"
   },
   {
    "when": "07/25 11:00",
-   "rel": "2일 22시간 후",
+   "rel": "2일 21시간 후",
    "name": "lotto-am"
   },
   {
    "when": "07/25 18:00",
-   "rel": "3일 5시간 후",
+   "rel": "3일 4시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "07/26 21:00",
-   "rel": "4일 8시간 후",
+   "rel": "4일 7시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "07/29 09:00",
-   "rel": "6일 20시간 후",
+   "rel": "6일 19시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -138,6 +133,11 @@
    "when": "—",
    "rel": "—",
    "name": "healthcheck"
+  },
+  {
+   "when": "—",
+   "rel": "—",
+   "name": "lunch"
   }
  ],
  "todos": [
