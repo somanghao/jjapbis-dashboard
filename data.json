@@ -1,7 +1,7 @@
 {
- "generated": "2026-07-27 21:00:48",
- "generated_short": "07/27 21:00",
- "today": "2026-07-27",
+ "generated": "2026-07-28 06:00:49",
+ "generated_short": "07/28 06:00",
+ "today": "2026-07-28",
  "services": [
   {
    "key": "telegram",
@@ -43,13 +43,13 @@
  "imminent": [
   {
    "when": "07/28 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "08/03 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
@@ -57,76 +57,76 @@
  "reminders": [
   {
    "when": "07/28 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "08/03 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "07/27 21:05",
+   "when": "07/28 06:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "07/27 21:10",
+   "when": "07/28 06:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
-   "when": "07/27 23:00",
-   "rel": "1시간 59분 후",
-   "name": "daily-review"
-  },
-  {
    "when": "07/28 07:00",
-   "rel": "9시간 59분 후",
+   "rel": "59분 후",
    "name": "weather"
   },
   {
    "when": "07/28 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "07/28 09:30",
-   "rel": "12시간 29분 후",
+   "rel": "3시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "07/28 13:00",
-   "rel": "15시간 59분 후",
+   "rel": "6시간 59분 후",
    "name": "lunch"
   },
   {
+   "when": "07/28 23:00",
+   "rel": "16시간 59분 후",
+   "name": "daily-review"
+  },
+  {
    "when": "07/29 09:00",
-   "rel": "1일 11시간 후",
+   "rel": "1일 2시간 후",
    "name": "chief-biweekly"
   },
   {
    "when": "08/01 10:00",
-   "rel": "4일 12시간 후",
+   "rel": "4일 3시간 후",
    "name": "makenovel"
   },
   {
    "when": "08/01 11:00",
-   "rel": "4일 13시간 후",
+   "rel": "4일 4시간 후",
    "name": "lotto-am"
   },
   {
    "when": "08/01 18:00",
-   "rel": "4일 20시간 후",
+   "rel": "4일 11시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "08/02 21:00",
-   "rel": "5일 23시간 후",
+   "rel": "5일 14시간 후",
    "name": "todos-weekly"
   },
   {
@@ -337,18 +337,7 @@
    "items": []
   }
  ],
- "chat": [
-  {
-   "ts": "17:11:25",
-   "who": "짭비스",
-   "msg": "Not logged in · Please run /login"
-  },
-  {
-   "ts": "17:11:25",
-   "who": "사용자",
-   "msg": "내일 엘리오 카일 하이라이트 스펙 까지는거 공론화"
-  }
- ],
+ "chat": [],
  "makenovel": {
   "todo": [],
   "in_progress": [],
