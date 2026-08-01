@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-01 13:00:49",
- "generated_short": "08/01 13:00",
+ "generated": "2026-08-01 14:00:49",
+ "generated_short": "08/01 14:00",
  "today": "2026-08-01",
  "services": [
   {
@@ -43,19 +43,25 @@
  "imminent": [
   {
    "when": "08/03 09:00",
-   "rel": "1일 19시간 후",
+   "rel": "1일 18시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "08/03 09:00",
-   "rel": "1일 19시간 후",
+   "rel": "1일 18시간 후",
    "text": "2026-08-03 (월) 09:00 — 1) 과니와 '선명한 특화 모드' 고민 같이(같이 나은지/뭔가 더 표시 가능한지) 2) LCK모드 신규선수: 그리드→어드민→포지션 설정",
    "unit": "reminder-guani-sensiell-mode-20260803.timer"
   },
   {
+   "when": "08/03 09:00",
+   "rel": "1일 18시간 후",
+   "text": "",
+   "unit": "reminder-scroll-diagonal-anim-20260803.timer"
+  },
+  {
    "when": "08/04 09:00",
-   "rel": "2일 19시간 후",
+   "rel": "2일 18시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
@@ -63,77 +69,88 @@
  "reminders": [
   {
    "when": "08/03 09:00",
-   "rel": "1일 19시간 후",
+   "rel": "1일 18시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "08/03 09:00",
-   "rel": "1일 19시간 후",
+   "rel": "1일 18시간 후",
    "text": "2026-08-03 (월) 09:00 — 1) 과니와 '선명한 특화 모드' 고민 같이(같이 나은지/뭔가 더 표시 가능한지) 2) LCK모드 신규선수: 그리드→어드민→포지션 설정",
    "unit": "reminder-guani-sensiell-mode-20260803.timer"
   },
   {
+   "when": "08/03 09:00",
+   "rel": "1일 18시간 후",
+   "text": "",
+   "unit": "reminder-scroll-diagonal-anim-20260803.timer"
+  },
+  {
    "when": "08/04 09:00",
-   "rel": "2일 19시간 후",
+   "rel": "2일 18시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "08/01 13:05",
+   "when": "08/01 14:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "08/01 13:10",
+   "when": "08/01 14:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "08/01 18:00",
-   "rel": "4시간 59분 후",
+   "rel": "3시간 59분 후",
    "name": "lotto-pm"
   },
   {
    "when": "08/01 23:00",
-   "rel": "9시간 59분 후",
+   "rel": "8시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "08/02 07:00",
-   "rel": "17시간 59분 후",
+   "rel": "16시간 59분 후",
    "name": "weather"
   },
   {
    "when": "08/02 09:00",
-   "rel": "19시간 59분 후",
+   "rel": "18시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "08/02 09:30",
-   "rel": "20시간 29분 후",
+   "rel": "19시간 29분 후",
    "name": "stocks"
   },
   {
+   "when": "08/02 13:00",
+   "rel": "22시간 59분 후",
+   "name": "lunch"
+  },
+  {
    "when": "08/02 21:00",
-   "rel": "1일 7시간 후",
+   "rel": "1일 6시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "08/05 09:00",
-   "rel": "3일 19시간 후",
+   "rel": "3일 18시간 후",
    "name": "chief-biweekly"
   },
   {
    "when": "08/08 10:00",
-   "rel": "6일 20시간 후",
+   "rel": "6일 19시간 후",
    "name": "makenovel"
   },
   {
    "when": "08/08 11:00",
-   "rel": "6일 21시간 후",
+   "rel": "6일 20시간 후",
    "name": "lotto-am"
   },
   {
@@ -145,11 +162,6 @@
    "when": "—",
    "rel": "—",
    "name": "healthcheck"
-  },
-  {
-   "when": "—",
-   "rel": "—",
-   "name": "lunch"
   }
  ],
  "todos": [
@@ -157,6 +169,7 @@
    "section": "알림 등록됨 (systemd timer)",
    "items": [
     "2026-08-03 (월) 09:00 — 1) 과니와 '선명한 특화 모드' 고민 같이(같이 나은지/뭔가 더 표시 가능한지) 2) LCK모드 신규선수: 그리드→어드민→포지션 설정",
+    "2026-08-03 (월) 09:00 — 스크롤 화면 5초 레이어 노출 시: 오른쪽 화면 밖 → 왼쪽으로 사선 막대가 들어오고, 막대에 방송국 즐겨찾기를 한글 텍스트로 표시 (게임 UI 연출처럼) (reminder-scroll-diagonal-anim-20260803, 상시 systemd)",
     "2026-07-21 (화) 09:00 — 엘리오에게 오버레이 이벤트 주입 보낼 것 (cron e16739f1, session-only)",
     "2026-07-16 (수) 09:00 — 호피·제이지·아이셔·낙주 지라 검색 후 담당자/작업 추가",
     "2026-07-16 (수) 09:00 — 과니에게 iOS SDK 인력요청",
@@ -368,7 +381,28 @@
    ]
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "상시 systemd 타이머로 박았으니 데몬 죽어도 안 날아가. 같은 월요일 9시에 과니 특화모드 건 + LCK 신규선수 건도 이미 예약돼 있어서 아침에 세 개 같이 올라올 거야."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "8/3(월) 09:00 — 스크롤 화면 5초 레이어 뜰 때, 오른쪽 화면 밖에서 왼쪽으로 사선 막대가 들어오면서 그 막대에 방송국 즐겨찾기를 한글 텍스트로 표시 (게임 UI 연출처럼)"
+  },
+  {
+   "ts": "13:33:22",
+   "who": "짭비스",
+   "msg": "등록했어 👍"
+  },
+  {
+   "ts": "13:33:22",
+   "who": "사용자",
+   "msg": "담주 월요일 스크롫화면에서 5초 레이어 나올때 오른쪽밖에서 왼쪽으로 사선형태 막대에 택스트로 방송국 즐겨찾기 한글로 나오는ㅍ형태 게임처럼"
+  }
+ ],
  "makenovel": {
   "todo": [],
   "in_progress": [],
