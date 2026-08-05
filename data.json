@@ -1,7 +1,7 @@
 {
- "generated": "2026-08-05 21:00:48",
- "generated_short": "08/05 21:00",
- "today": "2026-08-05",
+ "generated": "2026-08-06 06:00:49",
+ "generated_short": "08/06 06:00",
+ "today": "2026-08-06",
  "services": [
   {
    "key": "telegram",
@@ -42,91 +42,103 @@
  },
  "imminent": [
   {
+   "when": "08/07 09:00",
+   "rel": "1일 2시간 후",
+   "text": "",
+   "unit": "reminder-gameclock-ocr-reconnect-20260807.timer"
+  },
+  {
    "when": "08/10 09:00",
-   "rel": "4일 11시간 후",
+   "rel": "4일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "08/11 09:00",
-   "rel": "5일 11시간 후",
+   "rel": "5일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "reminders": [
   {
+   "when": "08/07 09:00",
+   "rel": "1일 2시간 후",
+   "text": "",
+   "unit": "reminder-gameclock-ocr-reconnect-20260807.timer"
+  },
+  {
    "when": "08/10 09:00",
-   "rel": "4일 11시간 후",
+   "rel": "4일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "08/11 09:00",
-   "rel": "5일 11시간 후",
+   "rel": "5일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "08/05 21:05",
+   "when": "08/06 06:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "08/05 21:10",
+   "when": "08/06 06:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
-   "when": "08/05 23:00",
-   "rel": "1시간 59분 후",
-   "name": "daily-review"
-  },
-  {
    "when": "08/06 07:00",
-   "rel": "9시간 59분 후",
+   "rel": "59분 후",
    "name": "weather"
   },
   {
    "when": "08/06 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "08/06 09:30",
-   "rel": "12시간 29분 후",
+   "rel": "3시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "08/06 13:00",
-   "rel": "15시간 59분 후",
+   "rel": "6시간 59분 후",
    "name": "lunch"
   },
   {
+   "when": "08/06 23:00",
+   "rel": "16시간 59분 후",
+   "name": "daily-review"
+  },
+  {
    "when": "08/08 10:00",
-   "rel": "2일 12시간 후",
+   "rel": "2일 3시간 후",
    "name": "makenovel"
   },
   {
    "when": "08/08 11:00",
-   "rel": "2일 13시간 후",
+   "rel": "2일 4시간 후",
    "name": "lotto-am"
   },
   {
    "when": "08/08 18:00",
-   "rel": "2일 20시간 후",
+   "rel": "2일 11시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "08/09 21:00",
-   "rel": "3일 23시간 후",
+   "rel": "3일 14시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "08/12 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -144,6 +156,7 @@
   {
    "section": "알림 등록됨 (systemd timer)",
    "items": [
+    "2026-08-07 (금) 09:00 — 게임클락 30초간 미수신 시, 그리드 API에서 '경기 중'이면 OCR 재연결 처리 (reminder-gameclock-ocr-reconnect-20260807, 상시 systemd)",
     "2026-08-03 (월) 09:00 — 1) 과니와 '선명한 특화 모드' 고민 같이(같이 나은지/뭔가 더 표시 가능한지) 2) LCK모드 신규선수: 그리드→어드민→포지션 설정",
     "2026-08-03 (월) 09:00 — 스크롤 화면 5초 레이어 노출 시: 오른쪽 화면 밖 → 왼쪽으로 사선 막대가 들어오고, 막대에 방송국 즐겨찾기를 한글 텍스트로 표시 (게임 UI 연출처럼) (reminder-scroll-diagonal-anim-20260803, 상시 systemd)",
     "2026-07-21 (화) 09:00 — 엘리오에게 오버레이 이벤트 주입 보낼 것 (cron e16739f1, session-only)",
@@ -358,7 +371,28 @@
    ]
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "상시 systemd 타이머로 박아놨고(reminder-gameclock-ocr-reconnect-20260807), 다음 실행 시각 금요일 09:00로 확인했어. 할일 리스트에도 추가해놨다. \"근게 api\"는 그리드 API로 알아들었는데 다른 거면 말해줘."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "8/7(금) 09:00 — 게임클락 30초간 못 가져오면, 그리드 API에서 '경기 중' 상태일 때 OCR 재연결 처리 넣을 것"
+  },
+  {
+   "ts": "01:05:54",
+   "who": "짭비스",
+   "msg": "등록했어 👍"
+  },
+  {
+   "ts": "01:05:54",
+   "who": "사용자",
+   "msg": "내일 아침 알림 30초 ㅇ게임클락 못가져오면 근게 api에서 게임중이면 ocr 재연결"
+  }
+ ],
  "makenovel": {
   "todo": [],
   "in_progress": [],
