@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-09 10:00:49",
- "generated_short": "08/09 10:00",
+ "generated": "2026-08-09 11:00:49",
+ "generated_short": "08/09 11:00",
  "today": "2026-08-09",
  "services": [
   {
@@ -43,13 +43,19 @@
  "imminent": [
   {
    "when": "08/10 09:00",
-   "rel": "22시간 59분 후",
+   "rel": "21시간 59분 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
+   "when": "08/10 09:00",
+   "rel": "21시간 59분 후",
+   "text": "",
+   "unit": "reminder-qa-log-api-adb-dashboard-20260810.timer"
+  },
+  {
    "when": "08/11 09:00",
-   "rel": "1일 22시간 후",
+   "rel": "1일 21시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
@@ -57,76 +63,82 @@
  "reminders": [
   {
    "when": "08/10 09:00",
-   "rel": "22시간 59분 후",
+   "rel": "21시간 59분 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
+   "when": "08/10 09:00",
+   "rel": "21시간 59분 후",
+   "text": "",
+   "unit": "reminder-qa-log-api-adb-dashboard-20260810.timer"
+  },
+  {
    "when": "08/11 09:00",
-   "rel": "1일 22시간 후",
+   "rel": "1일 21시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "08/09 10:05",
+   "when": "08/09 11:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "08/09 10:10",
+   "when": "08/09 11:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "08/09 13:00",
-   "rel": "2시간 59분 후",
+   "rel": "1시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "08/09 21:00",
-   "rel": "10시간 59분 후",
+   "rel": "9시간 59분 후",
    "name": "todos-weekly"
   },
   {
    "when": "08/09 23:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "08/10 07:00",
-   "rel": "20시간 59분 후",
+   "rel": "19시간 59분 후",
    "name": "weather"
   },
   {
    "when": "08/10 09:00",
-   "rel": "22시간 59분 후",
+   "rel": "21시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "08/10 09:30",
-   "rel": "23시간 29분 후",
+   "rel": "22시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "08/12 09:00",
-   "rel": "2일 22시간 후",
+   "rel": "2일 21시간 후",
    "name": "chief-biweekly"
   },
   {
    "when": "08/15 10:00",
-   "rel": "5일 23시간 후",
+   "rel": "5일 22시간 후",
    "name": "makenovel"
   },
   {
    "when": "08/15 11:00",
-   "rel": "6일 0시간 후",
+   "rel": "5일 23시간 후",
    "name": "lotto-am"
   },
   {
    "when": "08/15 18:00",
-   "rel": "6일 7시간 후",
+   "rel": "6일 6시간 후",
    "name": "lotto-pm"
   },
   {
@@ -144,6 +156,7 @@
   {
    "section": "알림 등록됨 (systemd timer)",
    "items": [
+    "2026-08-10 (월) 09:00 — 1) 실QA 로그 API 확인 → 화요일에 QA에 전달 2) ADB를 모니터 대시보드 스킬로 만들기 (reminder-qa-log-api-adb-dashboard-20260810, 상시 systemd)",
     "2026-08-07 (금) 09:00 — 게임클락 30초간 미수신 시, 그리드 API에서 '경기 중'이면 OCR 재연결 처리 (reminder-gameclock-ocr-reconnect-20260807, 상시 systemd)",
     "2026-08-03 (월) 09:00 — 1) 과니와 '선명한 특화 모드' 고민 같이(같이 나은지/뭔가 더 표시 가능한지) 2) LCK모드 신규선수: 그리드→어드민→포지션 설정",
     "2026-08-03 (월) 09:00 — 스크롤 화면 5초 레이어 노출 시: 오른쪽 화면 밖 → 왼쪽으로 사선 막대가 들어오고, 막대에 방송국 즐겨찾기를 한글 텍스트로 표시 (게임 UI 연출처럼) (reminder-scroll-diagonal-anim-20260803, 상시 systemd)",
@@ -361,7 +374,43 @@
    ]
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "참고로 지난번 8/7 게임클락 OCR 재연결 알림은 금요일 09:00에 정상 발화된 거 확인했다."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "상시 systemd 타이머(reminder-qa-log-api-adb-dashboard-20260810)로 등록했고, 다음 실행 시각 Mon 2026-08-10 09:00 KST로 실측 확인했다. 할일 리스트에도 넣어놨어."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "2) ADB를 모니터 대시보드 스킬로 만들기"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "1) 실QA 로그 API 확인 → 화요일에 QA 전달"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "8/10(월) 09:00 알림 두 건 묶어서 박았어"
+  },
+  {
+   "ts": "10:41:05",
+   "who": "짭비스",
+   "msg": "등록했어 👍"
+  },
+  {
+   "ts": "10:41:05",
+   "who": "사용자",
+   "msg": "월요일 알림 실qa 로그 api 확인후 화요일 qa전달 adb를 모니터 대시보드 스킬화"
+  }
+ ],
  "makenovel": {
   "todo": [],
   "in_progress": [],
