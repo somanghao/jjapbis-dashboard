@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-11 18:00:49",
- "generated_short": "08/11 18:00",
+ "generated": "2026-08-11 19:00:49",
+ "generated_short": "08/11 19:00",
  "today": "2026-08-11",
  "services": [
   {
@@ -43,13 +43,13 @@
  "imminent": [
   {
    "when": "08/17 09:00",
-   "rel": "5일 14시간 후",
+   "rel": "5일 13시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "08/18 09:00",
-   "rel": "6일 14시간 후",
+   "rel": "6일 13시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
@@ -57,76 +57,76 @@
  "reminders": [
   {
    "when": "08/17 09:00",
-   "rel": "5일 14시간 후",
+   "rel": "5일 13시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "08/18 09:00",
-   "rel": "6일 14시간 후",
+   "rel": "6일 13시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "08/11 18:05",
+   "when": "08/11 19:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "08/11 18:10",
+   "when": "08/11 19:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "08/11 23:00",
-   "rel": "4시간 59분 후",
+   "rel": "3시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "08/12 07:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "name": "weather"
   },
   {
    "when": "08/12 09:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "chief-biweekly"
   },
   {
    "when": "08/12 09:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "08/12 09:30",
-   "rel": "15시간 29분 후",
+   "rel": "14시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "08/12 13:00",
-   "rel": "18시간 59분 후",
+   "rel": "17시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "08/15 10:00",
-   "rel": "3일 15시간 후",
+   "rel": "3일 14시간 후",
    "name": "makenovel"
   },
   {
    "when": "08/15 11:00",
-   "rel": "3일 16시간 후",
+   "rel": "3일 15시간 후",
    "name": "lotto-am"
   },
   {
    "when": "08/15 18:00",
-   "rel": "3일 23시간 후",
+   "rel": "3일 22시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "08/16 21:00",
-   "rel": "5일 2시간 후",
+   "rel": "5일 1시간 후",
    "name": "todos-weekly"
   },
   {
