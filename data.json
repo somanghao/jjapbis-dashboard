@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-20 20:00:49",
- "generated_short": "08/20 20:00",
+ "generated": "2026-08-20 21:00:49",
+ "generated_short": "08/20 21:00",
  "today": "2026-08-20",
  "services": [
   {
@@ -42,91 +42,103 @@
  },
  "imminent": [
   {
+   "when": "08/21 09:00",
+   "rel": "11시간 59분 후",
+   "text": "",
+   "unit": "reminder-item-recent-api-calls-20260821.timer"
+  },
+  {
    "when": "08/24 09:00",
-   "rel": "3일 12시간 후",
+   "rel": "3일 11시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "08/25 09:00",
-   "rel": "4일 12시간 후",
+   "rel": "4일 11시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "reminders": [
   {
+   "when": "08/21 09:00",
+   "rel": "11시간 59분 후",
+   "text": "",
+   "unit": "reminder-item-recent-api-calls-20260821.timer"
+  },
+  {
    "when": "08/24 09:00",
-   "rel": "3일 12시간 후",
+   "rel": "3일 11시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "08/25 09:00",
-   "rel": "4일 12시간 후",
+   "rel": "4일 11시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "08/20 20:05",
+   "when": "08/20 21:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "08/20 20:10",
+   "when": "08/20 21:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "08/20 23:00",
-   "rel": "2시간 59분 후",
+   "rel": "1시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "08/21 07:00",
-   "rel": "10시간 59분 후",
+   "rel": "9시간 59분 후",
    "name": "weather"
   },
   {
    "when": "08/21 09:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "08/21 09:30",
-   "rel": "13시간 29분 후",
+   "rel": "12시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "08/21 13:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "08/22 10:00",
-   "rel": "1일 13시간 후",
+   "rel": "1일 12시간 후",
    "name": "makenovel"
   },
   {
    "when": "08/22 11:00",
-   "rel": "1일 14시간 후",
+   "rel": "1일 13시간 후",
    "name": "lotto-am"
   },
   {
    "when": "08/22 18:00",
-   "rel": "1일 21시간 후",
+   "rel": "1일 20시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "08/23 21:00",
-   "rel": "3일 0시간 후",
+   "rel": "2일 23시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "08/26 09:00",
-   "rel": "5일 12시간 후",
+   "rel": "5일 11시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -144,6 +156,7 @@
   {
    "section": "알림 등록됨 (systemd timer)",
    "items": [
+    "2026-08-21 (금) 09:00 — 1) 아이템 최근 (최근 아이템 확인) 2) API 호출 횟수 확인 3) 제이지 가이드 (reminder-item-recent-api-calls-20260821, 상시 systemd, enabled 확인 / list-timers Fri 2026-08-21 09:00 KST 대기)",
     "2026-08-19 (수) 09:00 — 1) 과니: 챌린저 시차 2) 낙주: 부하 데이터 3) 아이셔·제이지: 저녁대응 4) QA 테스트 불만 확인 5) 카일: 배포 문서 작성 시간 확인 6) LCK모드 최종 보고서 — ① 게임클락을 해야 했던 이유 ② 게임클락 인식을 위한 도전 ③ 성능 개선을 위한 노력 / [보고서 소재] 몰입 효과가 어려운 이유, 그리드의 이벤트 흐름·앵커 포인터·텍스트, 리플레이 중복, 팀 구분 힘들어지는 단말 이슈, 사업부의 요구사항, 게임클락은 단말 발열에 유리, 추후 로드맵과 연결, 이미지와 그리드는 쉽게 그림으로 설명 7) 제이지: 서폿템 문제 8) 아이셔: 스테이징 방화벽 (reminder-guani-nakju-eyesher-qa-20260819, 상시 systemd, enabled 확인)",
     "2026-08-14 (금) 09:00 — 어드민 페이지 만들어볼 것: 아이셔 자매품 '눈부셔' 기능, on/off 토글 시 화면 번쩍(플래시) 연출 (reminder-admin-nunbusyeo-20260814, 상시 systemd)",
     "2026-08-14 (금) 18:00 — 조합의 의뢰 추가, 즉 이벤트 (조합/제작 의뢰를 이벤트로 넣는 안, 철 제련·조합 게임 아이디어 연계 [[idea-best-iron-game]] / 게임 타이틀: 대항해시대) (reminder-craft-commission-event-20260814, 상시 systemd)",
@@ -384,7 +397,48 @@
    ]
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "\"재이슥\"은 제이지로 읽었는데(어제 서폿템 건 담당자), 다른 사람이나 다른 단어면 말해줘. 가이드가 제이지한테 줄 가이드인지 제이지가 쓴 가이드 검토인지도 애매해서 일단 그대로 뒀다."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "내일 8/21(금) 09:00 알림에 3) 제이지 가이드 추가했다. daemon-reload 후 systemctl cat으로 ExecStart 본문에 \"3) 제이지 가이드\" 들어간 거 직접 확인했고, 타이머는 Fri 2026-08-21 09:00 KST 대기 + enabled 상태야. todos.md 75번 줄에도 반영했어."
+  },
+  {
+   "ts": "20:32:53",
+   "who": "짭비스",
+   "msg": "붙였어 👍"
+  },
+  {
+   "ts": "20:32:53",
+   "who": "사용자",
+   "msg": "그리고 재이슥 가이드"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "\"아이템 최근\"은 최근 아이템 확인으로 읽었는데 아이템 최신화 같은 다른 뜻이면 말해줘. 붙일 거 더 있으면 이 알림에 이어서 넣을게."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "내일 8/21(금) 09:00 — 1) 아이템 최근 2) API 호출 횟수 확인. 타이머 ID reminder-item-recent-api-calls-20260821, list-timers에 Fri 2026-08-21 09:00 KST (12시간 후) 대기 + enabled 확인했고 ExecStart 본문도 직접 확인했어. todos.md 75번 줄에 넣었다."
+  },
+  {
+   "ts": "20:32:14",
+   "who": "짭비스",
+   "msg": "등록했어 👍"
+  },
+  {
+   "ts": "20:32:14",
+   "who": "사용자",
+   "msg": "내일아침 아이템 최근 그리고 api 호출 횟수"
+  }
+ ],
  "makenovel": {
   "todo": [],
   "in_progress": [],
