@@ -1,7 +1,7 @@
 {
- "generated": "2026-08-24 21:00:49",
- "generated_short": "08/24 21:00",
- "today": "2026-08-24",
+ "generated": "2026-08-25 06:00:48",
+ "generated_short": "08/25 06:00",
+ "today": "2026-08-25",
  "services": [
   {
    "key": "telegram",
@@ -43,13 +43,25 @@
  "imminent": [
   {
    "when": "08/25 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
+   "when": "08/25 09:00",
+   "rel": "2시간 59분 후",
+   "text": "",
+   "unit": "reminder-vietnam-work-mgmt-20260825.timer"
+  },
+  {
+   "when": "08/25 13:50",
+   "rel": "7시간 49분 후",
+   "text": "",
+   "unit": "reminder-jayzee-eyesher-meeting-20260825.timer"
+  },
+  {
    "when": "08/31 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
@@ -57,76 +69,88 @@
  "reminders": [
   {
    "when": "08/25 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
+   "when": "08/25 09:00",
+   "rel": "2시간 59분 후",
+   "text": "",
+   "unit": "reminder-vietnam-work-mgmt-20260825.timer"
+  },
+  {
+   "when": "08/25 13:50",
+   "rel": "7시간 49분 후",
+   "text": "",
+   "unit": "reminder-jayzee-eyesher-meeting-20260825.timer"
+  },
+  {
    "when": "08/31 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "08/24 21:05",
+   "when": "08/25 06:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "08/24 21:10",
+   "when": "08/25 06:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
-   "when": "08/24 23:00",
-   "rel": "1시간 59분 후",
-   "name": "daily-review"
-  },
-  {
    "when": "08/25 07:00",
-   "rel": "9시간 59분 후",
+   "rel": "59분 후",
    "name": "weather"
   },
   {
    "when": "08/25 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "08/25 09:30",
-   "rel": "12시간 29분 후",
+   "rel": "3시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "08/25 13:00",
-   "rel": "15시간 59분 후",
+   "rel": "6시간 59분 후",
    "name": "lunch"
   },
   {
+   "when": "08/25 23:00",
+   "rel": "16시간 59분 후",
+   "name": "daily-review"
+  },
+  {
    "when": "08/26 09:00",
-   "rel": "1일 11시간 후",
+   "rel": "1일 2시간 후",
    "name": "chief-biweekly"
   },
   {
    "when": "08/29 10:00",
-   "rel": "4일 12시간 후",
+   "rel": "4일 3시간 후",
    "name": "makenovel"
   },
   {
    "when": "08/29 11:00",
-   "rel": "4일 13시간 후",
+   "rel": "4일 4시간 후",
    "name": "lotto-am"
   },
   {
    "when": "08/29 18:00",
-   "rel": "4일 20시간 후",
+   "rel": "4일 11시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "08/30 21:00",
-   "rel": "5일 23시간 후",
+   "rel": "5일 14시간 후",
    "name": "todos-weekly"
   },
   {
@@ -144,6 +168,8 @@
   {
    "section": "알림 등록됨 (systemd timer)",
    "items": [
+    "2026-08-25 (화) 09:00 — 1) 베트남 업무관리 (짭비스로 관리하라는 뜻으로 해석, 스코프 미확인) 2) 제이지·아이셔에게 당일 14:00 회의 약속 잡기 — \"진지하게 말씀드릴 게 있다\"고 전달 (reminder-vietnam-work-mgmt-20260825, 상시 systemd, enabled / list-timers Tue 2026-08-25 09:00 KST 대기 확인)",
+    "2026-08-25 (화) 13:50 — 10분 뒤 14:00 제이지·아이셔 회의, 진지하게 말씀드릴 건 정리했는지 확인 (reminder-jayzee-eyesher-meeting-20260825, 상시 systemd, enable --now 완료 / list-timers Tue 2026-08-25 13:50 KST 대기 확인) ※ 회의 안건(무슨 얘기를 진지하게 할 건지) 미지정",
     "2026-08-21 (금) 09:00 — 1) 아이템 최근 (최근 아이템 확인) 2) API 호출 횟수 확인 3) 제이슥 가이드 ※제이지 아님, 별도 인물 4) 채팅 가속도 측정/산출 방법 찾기 (센시엘 재미 지표화 [[reminder-sensiell-fun-metrics-20260813]] 연계) 5) 클립 생성량 (재미 지표 후보, 4번과 같은 축) (reminder-item-recent-api-calls-20260821, 상시 systemd, enabled 확인 / list-timers Fri 2026-08-21 09:00 KST 대기)",
     "2026-08-19 (수) 09:00 — 1) 과니: 챌린저 시차 2) 낙주: 부하 데이터 3) 아이셔·제이지: 저녁대응 4) QA 테스트 불만 확인 5) 카일: 배포 문서 작성 시간 확인 6) LCK모드 최종 보고서 — ① 게임클락을 해야 했던 이유 ② 게임클락 인식을 위한 도전 ③ 성능 개선을 위한 노력 / [보고서 소재] 몰입 효과가 어려운 이유, 그리드의 이벤트 흐름·앵커 포인터·텍스트, 리플레이 중복, 팀 구분 힘들어지는 단말 이슈, 사업부의 요구사항, 게임클락은 단말 발열에 유리, 추후 로드맵과 연결, 이미지와 그리드는 쉽게 그림으로 설명 7) 제이지: 서폿템 문제 8) 아이셔: 스테이징 방화벽 (reminder-guani-nakju-eyesher-qa-20260819, 상시 systemd, enabled 확인)",
     "2026-08-14 (금) 09:00 — 어드민 페이지 만들어볼 것: 아이셔 자매품 '눈부셔' 기능, on/off 토글 시 화면 번쩍(플래시) 연출 (reminder-admin-nunbusyeo-20260814, 상시 systemd)",
@@ -251,7 +277,10 @@
    ]
   }
  ],
- "today_memos": [],
+ "today_memos": [
+  "2026-08-25 (화) 09:00 — 1) 베트남 업무관리 (짭비스로 관리하라는 뜻으로 해석, 스코프 미확인) 2) 제이지·아이셔에게 당일 14:00 회의 약속 잡기 — \"진지하게 말씀드릴 게 있다\"고 전달 (reminder-vietnam-work-mgmt-20260825, 상시 systemd, enabled / list-timers Tue 2026-08-25 09:00 KST 대기 확인)",
+  "2026-08-25 (화) 13:50 — 10분 뒤 14:00 제이지·아이셔 회의, 진지하게 말씀드릴 건 정리했는지 확인 (reminder-jayzee-eyesher-meeting-20260825, 상시 systemd, enable --now 완료 / list-timers Tue 2026-08-25 13:50 KST 대기 확인) ※ 회의 안건(무슨 얘기를 진지하게 할 건지) 미지정"
+ ],
  "ideas": [
   {
    "name": "게임 아이디어 - 가장 좋은 철 만들기",
