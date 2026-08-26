@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-26 18:00:49",
- "generated_short": "08/26 18:00",
+ "generated": "2026-08-26 19:00:49",
+ "generated_short": "08/26 19:00",
  "today": "2026-08-26",
  "services": [
   {
@@ -42,91 +42,103 @@
  },
  "imminent": [
   {
+   "when": "08/27 09:00",
+   "rel": "13시간 59분 후",
+   "text": "",
+   "unit": "reminder-sync-broadcast-20260827.timer"
+  },
+  {
    "when": "08/31 09:00",
-   "rel": "4일 14시간 후",
+   "rel": "4일 13시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/01 09:00",
-   "rel": "5일 14시간 후",
+   "rel": "5일 13시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "reminders": [
   {
+   "when": "08/27 09:00",
+   "rel": "13시간 59분 후",
+   "text": "",
+   "unit": "reminder-sync-broadcast-20260827.timer"
+  },
+  {
    "when": "08/31 09:00",
-   "rel": "4일 14시간 후",
+   "rel": "4일 13시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/01 09:00",
-   "rel": "5일 14시간 후",
+   "rel": "5일 13시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "08/26 18:05",
+   "when": "08/26 19:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "08/26 18:10",
+   "when": "08/26 19:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "08/26 23:00",
-   "rel": "4시간 59분 후",
+   "rel": "3시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "08/27 07:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "name": "weather"
   },
   {
    "when": "08/27 09:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "08/27 09:30",
-   "rel": "15시간 29분 후",
+   "rel": "14시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "08/27 13:00",
-   "rel": "18시간 59분 후",
+   "rel": "17시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "08/29 10:00",
-   "rel": "2일 15시간 후",
+   "rel": "2일 14시간 후",
    "name": "makenovel"
   },
   {
    "when": "08/29 11:00",
-   "rel": "2일 16시간 후",
+   "rel": "2일 15시간 후",
    "name": "lotto-am"
   },
   {
    "when": "08/29 18:00",
-   "rel": "2일 23시간 후",
+   "rel": "2일 22시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "08/30 21:00",
-   "rel": "4일 2시간 후",
+   "rel": "4일 1시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "09/02 09:00",
-   "rel": "6일 14시간 후",
+   "rel": "6일 13시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -144,6 +156,7 @@
   {
    "section": "알림 등록됨 (systemd timer)",
    "items": [
+    "2026-08-27 (목) 09:00 — 1) 5초 싱크 방송하기 (오전) 2) 클라에서 이벤트 발화되는 것 게임화면에 표시해줄 것 3) 제이지님과 선수 데이터 확인 같이 할 것 4) 몰입효과 실시간 인식률 체크 — 3세트 기준으로 확인 요청 (540 화질 이상) (reminder-sync-broadcast-20260827, 상시 systemd, enable --now 완료 / list-timers Thu 2026-08-27 09:00 KST 대기 + enabled + ExecStart 본문 출력 확인) ※ \"5초 싱크\"가 그리드-클라 지연 보정인지 방송 송출 싱크 테스트인지 미확인",
     "2026-08-26 (수) 09:00 — 회사 프로세스 시스템 만들기 (reminder-company-process-system-20260826, 상시 systemd, enable --now 완료 / list-timers Wed 2026-08-26 09:00 KST 대기 + ExecStart 본문 확인) ※ 어떤 프로세스(개발/배포/기획/요청접수)인지, 문서화인지 실제 툴 구축인지 미지정",
     "2026-08-25 (화) 09:00 — 1) 베트남 업무관리 (짭비스로 관리하라는 뜻으로 해석, 스코프 미확인) 2) 제이지·아이셔에게 당일 14:00 회의 약속 잡기 — \"진지하게 말씀드릴 게 있다\"고 전달 (reminder-vietnam-work-mgmt-20260825, 상시 systemd, enabled / list-timers Tue 2026-08-25 09:00 KST 대기 확인)",
     "2026-08-25 (화) 13:50 — 10분 뒤 14:00 제이지·아이셔 회의, 진지하게 말씀드릴 건 정리했는지 확인 (reminder-jayzee-eyesher-meeting-20260825, 상시 systemd, enable --now 완료 / list-timers Tue 2026-08-25 13:50 KST 대기 확인) ※ 회의 안건(무슨 얘기를 진지하게 할 건지) 미지정",
@@ -380,7 +393,33 @@
    ]
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "4번은 8/19 LCK 최종 보고서의 \"몰입 효과가 어려운 이유\" 축이랑 같은 건으로 보여서 그쪽에 붙는 재료로 봐뒀어. \"5초 싱크\"가 그리드→클라 지연 보정 얘기인지 방송 송출 싱크 테스트인지는 안 잡혀 있어서 원문대로 뒀다."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "내용은 1) 5초 싱크 방송하기 2) 클라에서 이벤트 발화되는 것 게임화면에 표시 3) 제이지님과 선수 데이터 확인 같이 4) 몰입효과 실시간 인식률 3세트 기준 확인 요청(540 화질 이상)으로 넣었다."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "내일 8/27(목) 09:00 — 4건 묶음으로 걸었다. 타이머 reminder-sync-broadcast-20260827, list-timers에 Thu 2026-08-27 09:00 KST (14시간 후) enabled로 잡혔고 ExecStart 본문도 출력해서 4항목 다 들어간 거 확인했어. todos.md 79번 줄 반영."
+  },
+  {
+   "ts": "18:24:20",
+   "who": "짭비스",
+   "msg": "등록했어 👍"
+  },
+  {
+   "ts": "18:24:20",
+   "who": "사용자",
+   "msg": "낼 오전 5초 싱크 방송하기, 클라에서 이벤트 발화 되는것 게임화면에 표시해줄것 , 제이지님 선수 데이터 확인 같이 할것, 몰입효과 실시간 인식율 체크 3세트 기준으로 확인요청할것(540 화질이상)"
+  }
+ ],
  "makenovel": {
   "todo": [],
   "in_progress": [],
