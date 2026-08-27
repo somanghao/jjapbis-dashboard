@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-27 20:00:48",
- "generated_short": "08/27 20:00",
+ "generated": "2026-08-27 21:00:49",
+ "generated_short": "08/27 21:00",
  "today": "2026-08-27",
  "services": [
   {
@@ -43,31 +43,31 @@
  "imminent": [
   {
    "when": "08/28 09:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "text": "",
    "unit": "reminder-seed-metrics-botcheck-20260828.timer"
   },
   {
    "when": "08/28 09:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "text": "",
    "unit": "reminder-taffy-ios-multiplatform-20260828.timer"
   },
   {
    "when": "08/31 09:00",
-   "rel": "3일 12시간 후",
+   "rel": "3일 11시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/01 09:00",
-   "rel": "4일 12시간 후",
+   "rel": "4일 11시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "09/03 09:00",
-   "rel": "6일 12시간 후",
+   "rel": "6일 11시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
@@ -75,94 +75,94 @@
  "reminders": [
   {
    "when": "08/28 09:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "text": "",
    "unit": "reminder-seed-metrics-botcheck-20260828.timer"
   },
   {
    "when": "08/28 09:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "text": "",
    "unit": "reminder-taffy-ios-multiplatform-20260828.timer"
   },
   {
    "when": "08/31 09:00",
-   "rel": "3일 12시간 후",
+   "rel": "3일 11시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/01 09:00",
-   "rel": "4일 12시간 후",
+   "rel": "4일 11시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "09/03 09:00",
-   "rel": "6일 12시간 후",
+   "rel": "6일 11시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "08/27 20:05",
+   "when": "08/27 21:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "08/27 20:10",
+   "when": "08/27 21:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "08/27 23:00",
-   "rel": "2시간 59분 후",
+   "rel": "1시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "08/28 07:00",
-   "rel": "10시간 59분 후",
+   "rel": "9시간 59분 후",
    "name": "weather"
   },
   {
    "when": "08/28 09:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "08/28 09:30",
-   "rel": "13시간 29분 후",
+   "rel": "12시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "08/28 13:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "08/29 10:00",
-   "rel": "1일 13시간 후",
+   "rel": "1일 12시간 후",
    "name": "makenovel"
   },
   {
    "when": "08/29 11:00",
-   "rel": "1일 14시간 후",
+   "rel": "1일 13시간 후",
    "name": "lotto-am"
   },
   {
    "when": "08/29 18:00",
-   "rel": "1일 21시간 후",
+   "rel": "1일 20시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "08/30 21:00",
-   "rel": "3일 0시간 후",
+   "rel": "2일 23시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "09/02 09:00",
-   "rel": "5일 12시간 후",
+   "rel": "5일 11시간 후",
    "name": "chief-biweekly"
   },
   {
