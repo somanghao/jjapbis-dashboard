@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-11 07:00:49",
- "generated_short": "09/11 07:00",
+ "generated": "2026-09-11 08:00:49",
+ "generated_short": "09/11 08:00",
  "today": "2026-09-11",
  "services": [
   {
@@ -43,19 +43,19 @@
  "imminent": [
   {
    "when": "09/14 09:00",
-   "rel": "3일 1시간 후",
+   "rel": "3일 0시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/15 09:00",
-   "rel": "4일 1시간 후",
+   "rel": "4일 0시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "09/17 09:00",
-   "rel": "6일 1시간 후",
+   "rel": "6일 0시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
@@ -63,77 +63,82 @@
  "reminders": [
   {
    "when": "09/14 09:00",
-   "rel": "3일 1시간 후",
+   "rel": "3일 0시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/15 09:00",
-   "rel": "4일 1시간 후",
+   "rel": "4일 0시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "09/17 09:00",
-   "rel": "6일 1시간 후",
+   "rel": "6일 0시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "09/11 07:05",
+   "when": "09/11 08:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "09/11 07:10",
+   "when": "09/11 08:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "09/11 09:00",
-   "rel": "1시간 59분 후",
+   "rel": "59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "09/11 09:30",
-   "rel": "2시간 29분 후",
+   "rel": "1시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "09/11 13:00",
-   "rel": "5시간 59분 후",
+   "rel": "4시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "09/11 23:00",
-   "rel": "15시간 59분 후",
+   "rel": "14시간 59분 후",
    "name": "daily-review"
   },
   {
+   "when": "09/12 07:00",
+   "rel": "22시간 59분 후",
+   "name": "weather"
+  },
+  {
    "when": "09/12 10:00",
-   "rel": "1일 2시간 후",
+   "rel": "1일 1시간 후",
    "name": "makenovel"
   },
   {
    "when": "09/12 11:00",
-   "rel": "1일 3시간 후",
+   "rel": "1일 2시간 후",
    "name": "lotto-am"
   },
   {
    "when": "09/12 18:00",
-   "rel": "1일 10시간 후",
+   "rel": "1일 9시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "09/13 21:00",
-   "rel": "2일 13시간 후",
+   "rel": "2일 12시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "09/16 09:00",
-   "rel": "5일 1시간 후",
+   "rel": "5일 0시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -145,11 +150,6 @@
    "when": "—",
    "rel": "—",
    "name": "healthcheck"
-  },
-  {
-   "when": "—",
-   "rel": "—",
-   "name": "weather"
   }
  ],
  "todos": [
@@ -379,7 +379,98 @@
    "items": []
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "07:50:02",
+   "who": "짭비스",
+   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
+  },
+  {
+   "ts": "07:50:02",
+   "who": "사용자",
+   "msg": "훈 칭찬 올해초 부터 동기부여 안되는 질질 끌리는일을 요청하면 항상 긍정적인 마인드로 잘했음"
+  },
+  {
+   "ts": "07:47:46",
+   "who": "짭비스",
+   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
+  },
+  {
+   "ts": "07:47:46",
+   "who": "사용자",
+   "msg": "새로운 모델과 기술 적용할때의 무서움 부담감을 이겨냈습니다 엘리오 칭찬"
+  },
+  {
+   "ts": "07:45:30",
+   "who": "짭비스",
+   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
+  },
+  {
+   "ts": "07:45:30",
+   "who": "사용자",
+   "msg": "어디까지 일의경계를 정하고 각 담당자간의 교류를 할수 있게 해주거나 알아서 잘할수 있게 기반지식을 알려주거나 가이드를 주는것"
+  },
+  {
+   "ts": "07:45:21",
+   "who": "짭비스",
+   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
+  },
+  {
+   "ts": "07:45:21",
+   "who": "사용자",
+   "msg": "어디까지 일의경계를 정하고 각 담당자간의 교류를 할수 있게 해주거나 알아서 잘할수 있게 기잔지식을 알려주거나 가이드를 주는것"
+  },
+  {
+   "ts": "07:36:56",
+   "who": "짭비스",
+   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
+  },
+  {
+   "ts": "07:36:56",
+   "who": "사용자",
+   "msg": "결국 우리가 뭘만들어야 하는지 이해를 하고 제품 정의를 개발자 모두에게 이해시키고 하나의 제품으로 만드는데 자기 역활을 잘할수 있게 만드는 일"
+  },
+  {
+   "ts": "07:31:23",
+   "who": "짭비스",
+   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
+  },
+  {
+   "ts": "07:31:23",
+   "who": "사용자",
+   "msg": "새로운기술 무서움"
+  },
+  {
+   "ts": "07:29:56",
+   "who": "짭비스",
+   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
+  },
+  {
+   "ts": "07:29:56",
+   "who": "사용자",
+   "msg": "클라이언트 에서는 선제적으로 개발하여 가이드를 주는것 때로 기술의 한계에 도달하면 개로운 기술 가이드를 주는것 테서렉 -> 새로운 모델로 제안 엘리오거 잘받아주었습니다 새로운기술을 적용하는 유연성 안정화하기 위한 노력을 엘리오가 잘해주었습니다"
+  },
+  {
+   "ts": "07:26:07",
+   "who": "짭비스",
+   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
+  },
+  {
+   "ts": "07:26:07",
+   "who": "사용자",
+   "msg": "그리드를 이해하고 롤을 이해하고 기획의 방향을 이해하고 우리 시스템의 구조 클라이언트의 ocr의 한계 개선을 알고  결국 개발은 lck mode에서 무엇을 만들지를 정의하는 일이 보람되었습니다"
+  },
+  {
+   "ts": "07:25:10",
+   "who": "짭비스",
+   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
+  },
+  {
+   "ts": "07:25:10",
+   "who": "사용자",
+   "msg": "그리드를 이해하고 롤을 이해하고 기획의 방향을 이해하고 우리 시스템의 구조 클라이언트의 ocr늘 읽고 결국 개발은 무엇을 만들지를 정의하는 일이 보람되었습니다"
+  }
+ ],
  "makenovel": {
   "todo": [],
   "in_progress": [],
