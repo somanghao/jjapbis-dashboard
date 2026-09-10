@@ -1,7 +1,7 @@
 {
- "generated": "2026-09-10 21:00:48",
- "generated_short": "09/10 21:00",
- "today": "2026-09-10",
+ "generated": "2026-09-11 06:00:49",
+ "generated_short": "09/11 06:00",
+ "today": "2026-09-11",
  "services": [
   {
    "key": "telegram",
@@ -43,19 +43,19 @@
  "imminent": [
   {
    "when": "09/14 09:00",
-   "rel": "3일 11시간 후",
+   "rel": "3일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/15 09:00",
-   "rel": "4일 11시간 후",
+   "rel": "4일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "09/17 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
@@ -63,82 +63,82 @@
  "reminders": [
   {
    "when": "09/14 09:00",
-   "rel": "3일 11시간 후",
+   "rel": "3일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/15 09:00",
-   "rel": "4일 11시간 후",
+   "rel": "4일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "09/17 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "09/10 21:05",
+   "when": "09/11 06:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "09/10 21:10",
+   "when": "09/11 06:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
-   "when": "09/10 23:00",
-   "rel": "1시간 59분 후",
-   "name": "daily-review"
-  },
-  {
    "when": "09/11 07:00",
-   "rel": "9시간 59분 후",
+   "rel": "59분 후",
    "name": "weather"
   },
   {
    "when": "09/11 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "09/11 09:30",
-   "rel": "12시간 29분 후",
+   "rel": "3시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "09/11 13:00",
-   "rel": "15시간 59분 후",
+   "rel": "6시간 59분 후",
    "name": "lunch"
   },
   {
+   "when": "09/11 23:00",
+   "rel": "16시간 59분 후",
+   "name": "daily-review"
+  },
+  {
    "when": "09/12 10:00",
-   "rel": "1일 12시간 후",
+   "rel": "1일 3시간 후",
    "name": "makenovel"
   },
   {
    "when": "09/12 11:00",
-   "rel": "1일 13시간 후",
+   "rel": "1일 4시간 후",
    "name": "lotto-am"
   },
   {
    "when": "09/12 18:00",
-   "rel": "1일 20시간 후",
+   "rel": "1일 11시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "09/13 21:00",
-   "rel": "2일 23시간 후",
+   "rel": "2일 14시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "09/16 09:00",
-   "rel": "5일 11시간 후",
+   "rel": "5일 2시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -379,28 +379,7 @@
    "items": []
   }
  ],
- "chat": [
-  {
-   "ts": "00:22:57",
-   "who": "짭비스",
-   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
-  },
-  {
-   "ts": "00:22:57",
-   "who": "사용자",
-   "msg": "내일아침 알릴것 텍스트 한계 게임클락을 진행한것"
-  },
-  {
-   "ts": "00:22:13",
-   "who": "짭비스",
-   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
-  },
-  {
-   "ts": "00:22:13",
-   "who": "사용자",
-   "msg": "내일아침9시 알림 조엘면담 얼마 안남았는데 애들 눈치보고 살고싶지 않다 금요일 업무 실행시 한마디만 해주길 집중안하거나 비협조적인 사람들 내쉬가 알려달라 고 해주고 그리고 파트장 더 활용하고 싶으면 파트장과 커뮤니케이션 하고 파트장이 평가를 들읅것이라고 하고 파트장 말 안들으면 조앨과 면담할거라고 이야기 해주길 바람 쿼카 내가 죠지는거 보기 싫으면 확실하게 이야기 해주길 바란다"
-  }
- ],
+ "chat": [],
  "makenovel": {
   "todo": [],
   "in_progress": [],
