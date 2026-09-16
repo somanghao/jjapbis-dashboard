@@ -1,7 +1,7 @@
 {
- "generated": "2026-09-16 21:00:49",
- "generated_short": "09/16 21:00",
- "today": "2026-09-16",
+ "generated": "2026-09-17 06:00:49",
+ "generated_short": "09/17 06:00",
+ "today": "2026-09-17",
  "services": [
   {
    "key": "telegram",
@@ -43,19 +43,19 @@
  "imminent": [
   {
    "when": "09/17 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "09/21 09:00",
-   "rel": "4일 11시간 후",
+   "rel": "4일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/22 09:00",
-   "rel": "5일 11시간 후",
+   "rel": "5일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
@@ -63,82 +63,77 @@
  "reminders": [
   {
    "when": "09/17 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "09/21 09:00",
-   "rel": "4일 11시간 후",
+   "rel": "4일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/22 09:00",
-   "rel": "5일 11시간 후",
+   "rel": "5일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "09/16 21:05",
+   "when": "09/17 06:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "09/16 21:10",
-   "rel": "9분 후",
-   "name": "makenovel-watch"
-  },
-  {
-   "when": "09/16 23:00",
-   "rel": "1시간 59분 후",
-   "name": "daily-review"
-  },
-  {
    "when": "09/17 07:00",
-   "rel": "9시간 59분 후",
+   "rel": "59분 후",
    "name": "weather"
   },
   {
    "when": "09/17 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "09/17 09:30",
-   "rel": "12시간 29분 후",
+   "rel": "3시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "09/17 13:00",
-   "rel": "15시간 59분 후",
+   "rel": "6시간 59분 후",
    "name": "lunch"
   },
   {
+   "when": "09/17 23:00",
+   "rel": "16시간 59분 후",
+   "name": "daily-review"
+  },
+  {
    "when": "09/19 10:00",
-   "rel": "2일 12시간 후",
+   "rel": "2일 3시간 후",
    "name": "makenovel"
   },
   {
    "when": "09/19 11:00",
-   "rel": "2일 13시간 후",
+   "rel": "2일 4시간 후",
    "name": "lotto-am"
   },
   {
    "when": "09/19 18:00",
-   "rel": "2일 20시간 후",
+   "rel": "2일 11시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "09/20 21:00",
-   "rel": "3일 23시간 후",
+   "rel": "3일 14시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "09/23 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -150,6 +145,11 @@
    "when": "—",
    "rel": "—",
    "name": "healthcheck"
+  },
+  {
+   "when": "—",
+   "rel": "—",
+   "name": "makenovel-watch"
   }
  ],
  "todos": [
@@ -379,68 +379,7 @@
    "items": []
   }
  ],
- "chat": [
-  {
-   "ts": "09:20:58",
-   "who": "짭비스",
-   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
-  },
-  {
-   "ts": "09:20:58",
-   "who": "사용자",
-   "msg": "치프회의 격주 수요일 다음주부터 시작"
-  },
-  {
-   "ts": "08:37:14",
-   "who": "짭비스",
-   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
-  },
-  {
-   "ts": "08:37:14",
-   "who": "사용자",
-   "msg": "ai 를 이용해서 생산성을 향상한 사람들이 회사에는 있을거라 생각하고 그사람들은 작년대비 일을 다 끝내는 시간이 줄어들었고 시간이 남았습니다. 다른 일을 할수도 있을거고 재밌는걸 만드는 사람도 있을거라 생각합니다. 그런사람들을 그룹으로 묶어 서비스 제안을 하게 유도하면 빠른 프로토타입을 만들어 제안할수 있을거라 생각합니다."
-  },
-  {
-   "ts": "07:44:37",
-   "who": "짭비스",
-   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
-  },
-  {
-   "ts": "07:44:37",
-   "who": "사용자",
-   "msg": "내쉬 송종혁: 드론 방송하기 시리즈 가져오고 웹소켓에서 게임클락 계산 포즈까지 게임 테스트 실시간은 5시부터 되는것 그리고 pl 업무 기획 개발 배포 스테이징 실qa 챙기는것 롤도 질알아야됨  vtv운영 rag 지라 추가 그리드의 데이터와 롤 과 lck대회 팀을 응원하는게 어떤건지 잘 이해하고있는 사람이 나밖에 없을때의 당혹감  모든 실무자가 현재 프로젝트를 적당히 이해할때 까지 모든 개발 의사결정에 개입해야했던 일들  결국 이프로젝트의 완성점이 어딘지를 고민하고 기술적으로 프로덕에 내보낼수 있을지 불안한 마음을 가지고 잘될까 걱정…"
-  },
-  {
-   "ts": "07:42:48",
-   "who": "짭비스",
-   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
-  },
-  {
-   "ts": "07:42:48",
-   "who": "사용자",
-   "msg": "내쉬 송종혁: 드론 방송하기 시리즈 가져오고 웹소켓에서 게임클락 계산 포즈까지 게임 테스트 실시간은 5시부터 되는것 그리고 pl 업무 기획 개발 배포 스테이징 실qa 챙기는것 롤도 질알아야됨  vtv운영 rag 지라 추가 그리드의 데이터와 롤 과 lck대회 팀을 응원하는게 어떤건지 잘 이해하고있는 사람이 나밖에 없을때의 당혹감  모든 실무자가 현재 프로젝트를 적당히 이해할때 까지 모든 개발 의사결정에 개입해야했던 일들  결국 이프로젝트의 완성점이 어딘지를 고민하고 기술적으로 프로덕에 내보낼수 있을지 불안한 마음을 가지고 잘될까 걱정…"
-  },
-  {
-   "ts": "07:39:14",
-   "who": "짭비스",
-   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
-  },
-  {
-   "ts": "07:39:14",
-   "who": "사용자",
-   "msg": "내쉬 송종혁: 드론 방송하기 시리즈 가져오고 웹소켓에서 게임클락 계산 포즈까지 게임 테스트 실시간은 5시부터 되는것 그리고 pl 업무 기획 개발 배포 스테이징 실qa 챙기는것 롤도 질알아야됨  vtv운영 rag 지라 추가 그리드의 데이터와 롤 과 lck대회 팀을 응원하는게 어떤건지 잘 이해하고있는 사람이 나밖에 없을때의 당혹감  모든 실무자가 현재 프로젝트를 적당히 이해할때 까지 모든 개발 의사결정에 개입해야했던 일들  결국 이프로젝트의 완성점이 어딘지를 고민하고 기술적으로 프로덕에 내보낼수 있을지 불안한 마음을 가지고 잘될까 걱정…"
-  },
-  {
-   "ts": "05:28:57",
-   "who": "짭비스",
-   "msg": "Failed to authenticate: OAuth session expired and could not be refreshed"
-  },
-  {
-   "ts": "05:28:57",
-   "who": "사용자",
-   "msg": "시리즈 가져오고 웹소켓에서 게임클락 계산 포즈까지 게임 테스트 실시간은 5시부터 되는것 그리고 pl 업무 기획 개발 배포 스테이징 실qa 챙기는것 롤도 질알아야됨  vtv운영 rag 지라 추가"
-  }
- ],
+ "chat": [],
  "makenovel": {
   "todo": [],
   "in_progress": [],
