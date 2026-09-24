@@ -1,7 +1,7 @@
 {
- "generated": "2026-09-24 21:00:49",
- "generated_short": "09/24 21:00",
- "today": "2026-09-24",
+ "generated": "2026-09-25 06:00:49",
+ "generated_short": "09/25 06:00",
+ "today": "2026-09-25",
  "services": [
   {
    "key": "telegram",
@@ -43,19 +43,19 @@
  "imminent": [
   {
    "when": "09/28 09:00",
-   "rel": "3일 11시간 후",
+   "rel": "3일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/29 09:00",
-   "rel": "4일 11시간 후",
+   "rel": "4일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "10/01 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
@@ -63,82 +63,82 @@
  "reminders": [
   {
    "when": "09/28 09:00",
-   "rel": "3일 11시간 후",
+   "rel": "3일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "09/29 09:00",
-   "rel": "4일 11시간 후",
+   "rel": "4일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "10/01 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "09/24 21:05",
+   "when": "09/25 06:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "09/24 21:10",
+   "when": "09/25 06:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
-   "when": "09/24 23:00",
-   "rel": "1시간 59분 후",
-   "name": "daily-review"
-  },
-  {
    "when": "09/25 07:00",
-   "rel": "9시간 59분 후",
+   "rel": "59분 후",
    "name": "weather"
   },
   {
    "when": "09/25 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "09/25 09:30",
-   "rel": "12시간 29분 후",
+   "rel": "3시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "09/25 13:00",
-   "rel": "15시간 59분 후",
+   "rel": "6시간 59분 후",
    "name": "lunch"
   },
   {
+   "when": "09/25 23:00",
+   "rel": "16시간 59분 후",
+   "name": "daily-review"
+  },
+  {
    "when": "09/26 10:00",
-   "rel": "1일 12시간 후",
+   "rel": "1일 3시간 후",
    "name": "makenovel"
   },
   {
    "when": "09/26 11:00",
-   "rel": "1일 13시간 후",
+   "rel": "1일 4시간 후",
    "name": "lotto-am"
   },
   {
    "when": "09/26 18:00",
-   "rel": "1일 20시간 후",
+   "rel": "1일 11시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "09/27 21:00",
-   "rel": "2일 23시간 후",
+   "rel": "2일 14시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "09/30 09:00",
-   "rel": "5일 11시간 후",
+   "rel": "5일 2시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -379,28 +379,7 @@
    "items": []
   }
  ],
- "chat": [
-  {
-   "ts": "",
-   "who": "",
-   "msg": "원인은 확인했고, 수집 코드 수정은 아직 안 했어."
-  },
-  {
-   "ts": "",
-   "who": "",
-   "msg": "삼성전자·SK하이닉스·현대차·펄어비스 모두 같은 파싱 실패가 재현됐고, 메시지 전송은 정상이야."
-  },
-  {
-   "ts": "14:11:17",
-   "who": "짭비스",
-   "msg": "확인했어. 네이버 증권 페이지 구조가 바뀌어서 기존 수집 코드가 주가를 못 읽고 있어."
-  },
-  {
-   "ts": "14:11:17",
-   "who": "사용자",
-   "msg": "파싱실패 확인"
-  }
- ],
+ "chat": [],
  "makenovel": {
   "todo": [],
   "in_progress": [],
