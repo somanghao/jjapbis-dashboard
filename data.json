@@ -1,7 +1,7 @@
 {
- "generated": "2026-09-28 21:00:49",
- "generated_short": "09/28 21:00",
- "today": "2026-09-28",
+ "generated": "2026-09-29 06:00:48",
+ "generated_short": "09/29 06:00",
+ "today": "2026-09-29",
  "services": [
   {
    "key": "telegram",
@@ -43,19 +43,19 @@
  "imminent": [
   {
    "when": "09/29 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "10/01 09:00",
-   "rel": "2일 11시간 후",
+   "rel": "2일 2시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "10/05 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
@@ -63,82 +63,82 @@
  "reminders": [
   {
    "when": "09/29 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "10/01 09:00",
-   "rel": "2일 11시간 후",
+   "rel": "2일 2시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "10/05 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "09/28 21:05",
+   "when": "09/29 06:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "09/28 21:10",
+   "when": "09/29 06:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
-   "when": "09/28 23:00",
-   "rel": "1시간 59분 후",
-   "name": "daily-review"
-  },
-  {
    "when": "09/29 07:00",
-   "rel": "9시간 59분 후",
+   "rel": "59분 후",
    "name": "weather"
   },
   {
    "when": "09/29 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "09/29 09:30",
-   "rel": "12시간 29분 후",
+   "rel": "3시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "09/29 13:00",
-   "rel": "15시간 59분 후",
+   "rel": "6시간 59분 후",
    "name": "lunch"
   },
   {
+   "when": "09/29 23:00",
+   "rel": "16시간 59분 후",
+   "name": "daily-review"
+  },
+  {
    "when": "09/30 09:00",
-   "rel": "1일 11시간 후",
+   "rel": "1일 2시간 후",
    "name": "chief-biweekly"
   },
   {
    "when": "10/03 10:00",
-   "rel": "4일 12시간 후",
+   "rel": "4일 3시간 후",
    "name": "makenovel"
   },
   {
    "when": "10/03 11:00",
-   "rel": "4일 13시간 후",
+   "rel": "4일 4시간 후",
    "name": "lotto-am"
   },
   {
    "when": "10/03 18:00",
-   "rel": "4일 20시간 후",
+   "rel": "4일 11시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "10/04 21:00",
-   "rel": "5일 23시간 후",
+   "rel": "5일 14시간 후",
    "name": "todos-weekly"
   },
   {
@@ -285,7 +285,9 @@
    ]
   }
  ],
- "today_memos": [],
+ "today_memos": [
+  "2026-09-29 (화) — 회사에서 makepl의 PL 프로세스 고도화. (2026-09-28 추가, 별도 알림 미등록)"
+ ],
  "ideas": [
   {
    "name": "게임 아이디어 - 가장 좋은 철 만들기",
@@ -397,23 +399,7 @@
    ]
   }
  ],
- "chat": [
-  {
-   "ts": "",
-   "who": "",
-   "msg": "내일(9/29 화) 회사에서 할 일로 ‘makepl에서 PL 프로세스 고도화’도 적어뒀어."
-  },
-  {
-   "ts": "16:48:01",
-   "who": "짭비스",
-   "msg": "가상세계 할 일에 캐릭터 성격, 랜덤 요소, 책·TV·SNS 등 영향을 받는 매체 요소를 추가했어."
-  },
-  {
-   "ts": "16:48:01",
-   "who": "사용자",
-   "msg": "가상세계 성격 추가 랜덤요소 추가 영향받는 매체 책 티비 sns등 추가  내일 회사 makepl에서 pl프로세스 고도화 추가"
-  }
- ],
+ "chat": [],
  "makenovel": {
   "todo": [],
   "in_progress": [],
