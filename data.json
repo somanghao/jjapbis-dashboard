@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-29 20:00:48",
- "generated_short": "09/29 20:00",
+ "generated": "2026-09-29 21:00:49",
+ "generated_short": "09/29 21:00",
  "today": "2026-09-29",
  "services": [
   {
@@ -42,103 +42,115 @@
  },
  "imminent": [
   {
+   "when": "09/30 09:00",
+   "rel": "11시간 59분 후",
+   "text": "",
+   "unit": "reminder-jetty-sensiell-work-20260930.timer"
+  },
+  {
    "when": "10/01 09:00",
-   "rel": "1일 12시간 후",
+   "rel": "1일 11시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "10/05 09:00",
-   "rel": "5일 12시간 후",
+   "rel": "5일 11시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/06 09:00",
-   "rel": "6일 12시간 후",
+   "rel": "6일 11시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "reminders": [
   {
+   "when": "09/30 09:00",
+   "rel": "11시간 59분 후",
+   "text": "",
+   "unit": "reminder-jetty-sensiell-work-20260930.timer"
+  },
+  {
    "when": "10/01 09:00",
-   "rel": "1일 12시간 후",
+   "rel": "1일 11시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "10/05 09:00",
-   "rel": "5일 12시간 후",
+   "rel": "5일 11시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/06 09:00",
-   "rel": "6일 12시간 후",
+   "rel": "6일 11시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "09/29 20:05",
+   "when": "09/29 21:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "09/29 20:10",
+   "when": "09/29 21:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "09/29 23:00",
-   "rel": "2시간 59분 후",
+   "rel": "1시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "09/30 07:00",
-   "rel": "10시간 59분 후",
+   "rel": "9시간 59분 후",
    "name": "weather"
   },
   {
    "when": "09/30 09:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "name": "chief-biweekly"
   },
   {
    "when": "09/30 09:00",
-   "rel": "12시간 59분 후",
+   "rel": "11시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "09/30 09:30",
-   "rel": "13시간 29분 후",
+   "rel": "12시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "09/30 13:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "10/03 10:00",
-   "rel": "3일 13시간 후",
+   "rel": "3일 12시간 후",
    "name": "makenovel"
   },
   {
    "when": "10/03 11:00",
-   "rel": "3일 14시간 후",
+   "rel": "3일 13시간 후",
    "name": "lotto-am"
   },
   {
    "when": "10/03 18:00",
-   "rel": "3일 21시간 후",
+   "rel": "3일 20시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "10/04 21:00",
-   "rel": "5일 0시간 후",
+   "rel": "4일 23시간 후",
    "name": "todos-weekly"
   },
   {
@@ -162,6 +174,7 @@
   {
    "section": "알림 등록됨 (systemd timer)",
    "items": [
+    "2026-09-30 (수) 09:00 — 제티·센시엘에게 작업 내역 보여주기 (reminder-jetty-sensiell-work-20260930, 상시 systemd, enabled 및 다음 실행 확인)",
     "2026-08-29 (토) 09:00 — 1) 발표 때 이렇게 말하기: \"동접 누적 기준 없이 조사하여 최근 일주일 수치는 또 다릅니다. 하지만 전체적인 경향성은 같기에 용기를 내서 뻔뻔하게 발표해보겠습니다\" 2) 방송수 기준인지 시청자 기준인지 전체 시청 점유율인지 등 기준이 명확했어야 합니다 (2026-08-28 21:0x 추가) (reminder-presentation-trend-line-20260829, 상시 systemd, enable --now 완료 / list-timers Sat 2026-08-29 09:00 KST 대기 + enabled 확인) ※ 어떤 발표인지 미지정 — 씨드 자동집계·재미 지표 축([[reminder-seed-metrics-botcheck-20260828]], [[reminder-fun-streamer-guard-20260828]])의 발표로 추정. \"내일아침\"을 그대로 8/29 토요일 09:00으로 등록했는데 실제 발표일이 평일(8/31 월)이면 어긋날 여지 있음",
     "2026-08-28 (금) 09:00 — iOS / Android / PC웹 개선방법 확인 (주말 전 마감, 8/27 타피 iOS 설치방법 문의 건 후속) (reminder-taffy-ios-multiplatform-20260828, 상시 systemd, enable --now 완료 / list-timers Fri 2026-08-28 09:00 KST 대기 + enabled + ExecStart 본문 출력 확인) ※ \"개선방법\"이 설치·배포 경로 개선인지 앱 성능/UX 개선인지 미확인, 타피가 어느 조직/담당인지도 미기재",
     "2026-08-28 (금) 09:00 — 1) 씨드를 자동 집계해서 공개 → 누군가의 취향이 아닌 지표 기반이면 스트리머들도 신뢰할 것 2) 뷰봇·채팅봇 걸러내기 위해 특정 IP 편중 데이터 검수·확인 (reminder-seed-metrics-botcheck-20260828, 상시 systemd, enable --now 완료 / list-timers Fri 2026-08-28 09:00 KST 대기 + enabled 확인) ※ 센시엘 '재미 지표화' 건([[reminder-sensiell-fun-metrics-20260813]]) 및 채팅 가속도·클립 생성량 지표 축과 같은 계열. \"씨드\"가 상반기 씨드([[idea-h1-seed-chat-acceleration]])인지 스트리머 추천 점수 개념인지 미확인 — 원문 그대로 등록. 집계 대상 지표 정의·공개 채널(대시보드/방송국 페이지) 미지정, IP 편중 검수의 데이터 소스도 미지정",
@@ -399,7 +412,38 @@
    ]
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "다만 직전 작업의 상세 전송 기록이 남아 있지 않아서 그 원인까지 확정하진 못했어."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "등록 안내를 두 번 받았다면, 작업 완료 보고랑 채팅 자동 답장이 겹쳤을 가능성이 커."
+  },
+  {
+   "ts": "20:15:24",
+   "who": "짭비스",
+   "msg": "확인했어. 제티·센시엘 알림은 내일(9/30) 아침 9시로 딱 1개만 등록돼 있어."
+  },
+  {
+   "ts": "20:15:24",
+   "who": "사용자",
+   "msg": "알림등록 두번 하는이유 확인"
+  },
+  {
+   "ts": "20:09:53",
+   "who": "짭비스",
+   "msg": "내일(9/30 수) 아침 9시에 ‘제티·센시엘에게 작업 내역 보여주기’ 알림 등록했어. 할 일 목록에도 추가해뒀어."
+  },
+  {
+   "ts": "20:09:53",
+   "who": "사용자",
+   "msg": "낼아침 제티 센시엘에게 작업 내역 보여주기"
+  }
+ ],
  "makenovel": {
   "todo": [],
   "in_progress": [],
