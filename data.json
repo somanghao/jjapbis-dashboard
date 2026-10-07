@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-07 21:00:00",
- "generated_short": "10/07 21:00",
- "today": "2026-10-07",
+ "generated": "2026-10-08 06:00:00",
+ "generated_short": "10/08 06:00",
+ "today": "2026-10-08",
  "services": [
   {
    "key": "telegram",
@@ -43,25 +43,25 @@
  "imminent": [
   {
    "when": "10/08 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "10/08 12:00",
-   "rel": "14시간 59분 후",
+   "rel": "5시간 59분 후",
    "text": "",
    "unit": "reminder-baru-contact-20261008.timer"
   },
   {
    "when": "10/12 09:00",
-   "rel": "4일 11시간 후",
+   "rel": "4일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/13 09:00",
-   "rel": "5일 11시간 후",
+   "rel": "5일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
@@ -69,88 +69,88 @@
  "reminders": [
   {
    "when": "10/08 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "10/08 12:00",
-   "rel": "14시간 59분 후",
+   "rel": "5시간 59분 후",
    "text": "",
    "unit": "reminder-baru-contact-20261008.timer"
   },
   {
    "when": "10/12 09:00",
-   "rel": "4일 11시간 후",
+   "rel": "4일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/13 09:00",
-   "rel": "5일 11시간 후",
+   "rel": "5일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "10/07 21:05",
+   "when": "10/08 06:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "10/07 21:10",
+   "when": "10/08 06:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
-   "when": "10/07 23:00",
-   "rel": "1시간 59분 후",
-   "name": "daily-review"
-  },
-  {
    "when": "10/08 07:00",
-   "rel": "9시간 59분 후",
+   "rel": "59분 후",
    "name": "weather"
   },
   {
    "when": "10/08 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "10/08 09:30",
-   "rel": "12시간 29분 후",
+   "rel": "3시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "10/08 13:00",
-   "rel": "15시간 59분 후",
+   "rel": "6시간 59분 후",
    "name": "lunch"
   },
   {
+   "when": "10/08 23:00",
+   "rel": "16시간 59분 후",
+   "name": "daily-review"
+  },
+  {
    "when": "10/10 10:00",
-   "rel": "2일 12시간 후",
+   "rel": "2일 3시간 후",
    "name": "makenovel"
   },
   {
    "when": "10/10 11:00",
-   "rel": "2일 13시간 후",
+   "rel": "2일 4시간 후",
    "name": "lotto-am"
   },
   {
    "when": "10/10 18:00",
-   "rel": "2일 20시간 후",
+   "rel": "2일 11시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "10/11 21:00",
-   "rel": "3일 23시간 후",
+   "rel": "3일 14시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "10/14 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -302,8 +302,7 @@
   }
  ],
  "today_memos": [
-  "2026-10-07 (수) 15:00 — 바루형에게 연락할 것 (reminder-baru-contact-20261007, 상시 systemd, enabled 및 다음 실행 확인)",
-  "2026-10-07 (수) 09:00 — 업무판에서 모든 프로세스 작업은 한눈에 쉽게 이해되는 플로우차트가 있어야 한다. (reminder-workboard-flowchart-20261007, 상시 systemd, enabled 및 다음 실행 확인)"
+  "2026-10-08 (목) 12:00 — 바루형에게 연락할 것 (reminder-baru-contact-20261008, 상시 systemd, enabled 및 다음 실행 확인)"
  ],
  "ideas": [
   {
@@ -404,7 +403,9 @@
   {
    "section": "짭비스의 오픈 약속 (한 것 / 까먹지 말 것)",
    "items": [
-    "내일(10/7) 오전 9시에 ‘업무판의 모든 프로세스 작업에 한눈에 쉽게 이해되는 플로우차트가 있어야 한다’ 알림 예정. 알림 등록·할 일 추가는 완료했다고 보고했으며, 실제 발송 확인 필요."
+    "내일(10/8 목) 낮 12시에 ‘바루형에게 연락하기’ 알림 예정. 알림 등록·할 일 추가는 완료했다고 보고했으며, 실제 발송 확인 필요.",
+    "오늘(10/7) 오후 3시 ‘바루형에게 연락할 것’ 알림은 등록·할 일 추가를 완료했다고 보고했으나, 제공된 로그에서 실제 발송은 확인되지 않음.",
+    "기존 약속인 오늘(10/7) 오전 9시 ‘업무판의 모든 프로세스 작업에 플로우차트 필요’ 알림도 제공된 로그에서 실제 발송은 확인되지 않음."
    ]
   },
   {
@@ -413,33 +414,10 @@
   },
   {
    "section": "선호 패턴 후보 (확정 전, 일요일에 directives 승격 검토)",
-   "items": [
-    "업무판의 모든 프로세스 작업에 한눈에 쉽게 이해되는 플로우차트가 있어야 한다고 명시함."
-   ]
+   "items": []
   }
  ],
- "chat": [
-  {
-   "ts": "16:16:50",
-   "who": "짭비스",
-   "msg": "내일(10/8 목) 점심 12시에 ‘바루형에게 연락하기’ 알림 등록했어. 할 일 목록에도 추가해뒀어."
-  },
-  {
-   "ts": "16:16:50",
-   "who": "사용자",
-   "msg": "내일 점심시간 바루형 연락하자"
-  },
-  {
-   "ts": "08:01:50",
-   "who": "짭비스",
-   "msg": "오늘(10/7 수) 오후 3시에 ‘바루형에게 연락할 것’ 알림 등록했어. 할 일 목록에도 추가해뒀어."
-  },
-  {
-   "ts": "08:01:50",
-   "who": "사용자",
-   "msg": "오후 3시 바루형 연락 할것"
-  }
- ],
+ "chat": [],
  "makenovel": {
   "todo": [],
   "in_progress": [],
