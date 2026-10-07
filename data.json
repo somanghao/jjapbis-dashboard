@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-07 16:00:00",
- "generated_short": "10/07 16:00",
+ "generated": "2026-10-07 17:00:00",
+ "generated_short": "10/07 17:00",
  "today": "2026-10-07",
  "services": [
   {
@@ -43,19 +43,25 @@
  "imminent": [
   {
    "when": "10/08 09:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
+   "when": "10/08 12:00",
+   "rel": "18시간 59분 후",
+   "text": "",
+   "unit": "reminder-baru-contact-20261008.timer"
+  },
+  {
    "when": "10/12 09:00",
-   "rel": "4일 16시간 후",
+   "rel": "4일 15시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/13 09:00",
-   "rel": "5일 16시간 후",
+   "rel": "5일 15시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
@@ -63,82 +69,88 @@
  "reminders": [
   {
    "when": "10/08 09:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
+   "when": "10/08 12:00",
+   "rel": "18시간 59분 후",
+   "text": "",
+   "unit": "reminder-baru-contact-20261008.timer"
+  },
+  {
    "when": "10/12 09:00",
-   "rel": "4일 16시간 후",
+   "rel": "4일 15시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/13 09:00",
-   "rel": "5일 16시간 후",
+   "rel": "5일 15시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "10/07 16:05",
+   "when": "10/07 17:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "10/07 16:10",
+   "when": "10/07 17:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "10/07 23:00",
-   "rel": "6시간 59분 후",
+   "rel": "5시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "10/08 07:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "weather"
   },
   {
    "when": "10/08 09:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "10/08 09:30",
-   "rel": "17시간 29분 후",
+   "rel": "16시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "10/08 13:00",
-   "rel": "20시간 59분 후",
+   "rel": "19시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "10/10 10:00",
-   "rel": "2일 17시간 후",
+   "rel": "2일 16시간 후",
    "name": "makenovel"
   },
   {
    "when": "10/10 11:00",
-   "rel": "2일 18시간 후",
+   "rel": "2일 17시간 후",
    "name": "lotto-am"
   },
   {
    "when": "10/10 18:00",
-   "rel": "3일 1시간 후",
+   "rel": "3일 0시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "10/11 21:00",
-   "rel": "4일 4시간 후",
+   "rel": "4일 3시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "10/14 09:00",
-   "rel": "6일 16시간 후",
+   "rel": "6일 15시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -162,6 +174,7 @@
   {
    "section": "알림 등록됨 (systemd timer)",
    "items": [
+    "2026-10-08 (목) 12:00 — 바루형에게 연락할 것 (reminder-baru-contact-20261008, 상시 systemd, enabled 및 다음 실행 확인)",
     "2026-10-07 (수) 15:00 — 바루형에게 연락할 것 (reminder-baru-contact-20261007, 상시 systemd, enabled 및 다음 실행 확인)",
     "2026-10-07 (수) 09:00 — 업무판에서 모든 프로세스 작업은 한눈에 쉽게 이해되는 플로우차트가 있어야 한다. (reminder-workboard-flowchart-20261007, 상시 systemd, enabled 및 다음 실행 확인)",
     "2026-09-30 (수) 09:00 — 제티·센시엘에게 작업 내역 보여주기 (reminder-jetty-sensiell-work-20260930, 상시 systemd, enabled 및 다음 실행 확인)",
@@ -406,6 +419,16 @@
   }
  ],
  "chat": [
+  {
+   "ts": "16:16:50",
+   "who": "짭비스",
+   "msg": "내일(10/8 목) 점심 12시에 ‘바루형에게 연락하기’ 알림 등록했어. 할 일 목록에도 추가해뒀어."
+  },
+  {
+   "ts": "16:16:50",
+   "who": "사용자",
+   "msg": "내일 점심시간 바루형 연락하자"
+  },
   {
    "ts": "08:01:50",
    "who": "짭비스",
