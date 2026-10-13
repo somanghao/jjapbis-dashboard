@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-13 21:00:00",
- "generated_short": "10/13 21:00",
- "today": "2026-10-13",
+ "generated": "2026-10-14 06:00:00",
+ "generated_short": "10/14 06:00",
+ "today": "2026-10-14",
  "services": [
   {
    "key": "telegram",
@@ -43,25 +43,25 @@
  "imminent": [
   {
    "when": "10/14 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-rag-jira-refactor-20261014.timer"
   },
   {
    "when": "10/15 09:00",
-   "rel": "1일 11시간 후",
+   "rel": "1일 2시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "10/19 09:00",
-   "rel": "5일 11시간 후",
+   "rel": "5일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/20 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
@@ -69,88 +69,88 @@
  "reminders": [
   {
    "when": "10/14 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "text": "",
    "unit": "reminder-rag-jira-refactor-20261014.timer"
   },
   {
    "when": "10/15 09:00",
-   "rel": "1일 11시간 후",
+   "rel": "1일 2시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "10/19 09:00",
-   "rel": "5일 11시간 후",
+   "rel": "5일 2시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/20 09:00",
-   "rel": "6일 11시간 후",
+   "rel": "6일 2시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "10/13 21:05",
+   "when": "10/14 06:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "10/13 21:10",
+   "when": "10/14 06:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
-   "when": "10/13 23:00",
-   "rel": "1시간 59분 후",
-   "name": "daily-review"
-  },
-  {
    "when": "10/14 07:00",
-   "rel": "9시간 59분 후",
+   "rel": "59분 후",
    "name": "weather"
   },
   {
    "when": "10/14 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "chief-biweekly"
   },
   {
    "when": "10/14 09:00",
-   "rel": "11시간 59분 후",
+   "rel": "2시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "10/14 09:30",
-   "rel": "12시간 29분 후",
+   "rel": "3시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "10/14 13:00",
-   "rel": "15시간 59분 후",
+   "rel": "6시간 59분 후",
    "name": "lunch"
   },
   {
+   "when": "10/14 23:00",
+   "rel": "16시간 59분 후",
+   "name": "daily-review"
+  },
+  {
    "when": "10/17 10:00",
-   "rel": "3일 12시간 후",
+   "rel": "3일 3시간 후",
    "name": "makenovel"
   },
   {
    "when": "10/17 11:00",
-   "rel": "3일 13시간 후",
+   "rel": "3일 4시간 후",
    "name": "lotto-am"
   },
   {
    "when": "10/17 18:00",
-   "rel": "3일 20시간 후",
+   "rel": "3일 11시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "10/18 21:00",
-   "rel": "4일 23시간 후",
+   "rel": "4일 14시간 후",
    "name": "todos-weekly"
   },
   {
@@ -306,7 +306,7 @@
   }
  ],
  "today_memos": [
-  "2026-10-13 (화) 09:00 — 조엘에게 RAG 정리해서 전달할 것. 웍스 업무 일정 알려줄 것. 업무를 쪼개는 게 맞는지, 아리아 iOS도 같이 확인할 것. (reminder-joel-rag-20261013, 상시 systemd, enabled 및 다음 실행 확인)"
+  "2026-10-14 (수) 09:00 — RAG 지라 다시 숲으로 로니 리팩 호두 리팩위 업적 만들것 (원문 보존, reminder-rag-jira-refactor-20261014, 상시 systemd, enabled 및 다음 실행 확인)"
  ],
  "ideas": [
   {
@@ -417,23 +417,7 @@
    "items": []
   }
  ],
- "chat": [
-  {
-   "ts": "",
-   "who": "",
-   "msg": "“RAG 지라 다시 숲으로 로니 리팩 호두 리팩위 업적 만들것” 그대로 적었고, 할 일 목록에도 추가해뒀어."
-  },
-  {
-   "ts": "17:47:21",
-   "who": "짭비스",
-   "msg": "내일(10/14 수) 아침 9시에 알림 등록했어."
-  },
-  {
-   "ts": "17:47:21",
-   "who": "사용자",
-   "msg": "낼아침 rag 지라 다시 숲으로 로니 리팩 호두 리팩위 업적 만들것"
-  }
- ],
+ "chat": [],
  "makenovel": {
   "todo": [],
   "in_progress": [],
