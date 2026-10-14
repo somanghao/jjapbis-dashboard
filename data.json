@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-14 16:00:00",
- "generated_short": "10/14 16:00",
+ "generated": "2026-10-14 17:00:00",
+ "generated_short": "10/14 17:00",
  "today": "2026-10-14",
  "services": [
   {
@@ -38,24 +38,24 @@
   "incoming": 0,
   "processing": 0,
   "done": 10,
-  "failed": 1
+  "failed": 4
  },
  "imminent": [
   {
    "when": "10/15 09:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "10/19 09:00",
-   "rel": "4일 16시간 후",
+   "rel": "4일 15시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/20 09:00",
-   "rel": "5일 16시간 후",
+   "rel": "5일 15시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
@@ -63,82 +63,82 @@
  "reminders": [
   {
    "when": "10/15 09:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   },
   {
    "when": "10/19 09:00",
-   "rel": "4일 16시간 후",
+   "rel": "4일 15시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/20 09:00",
-   "rel": "5일 16시간 후",
+   "rel": "5일 15시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "10/14 16:05",
+   "when": "10/14 17:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "10/14 16:10",
+   "when": "10/14 17:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "10/14 23:00",
-   "rel": "6시간 59분 후",
+   "rel": "5시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "10/15 07:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "weather"
   },
   {
    "when": "10/15 09:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "10/15 09:30",
-   "rel": "17시간 29분 후",
+   "rel": "16시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "10/15 13:00",
-   "rel": "20시간 59분 후",
+   "rel": "19시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "10/17 10:00",
-   "rel": "2일 17시간 후",
+   "rel": "2일 16시간 후",
    "name": "makenovel"
   },
   {
    "when": "10/17 11:00",
-   "rel": "2일 18시간 후",
+   "rel": "2일 17시간 후",
    "name": "lotto-am"
   },
   {
    "when": "10/17 18:00",
-   "rel": "3일 1시간 후",
+   "rel": "3일 0시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "10/18 21:00",
-   "rel": "4일 4시간 후",
+   "rel": "4일 3시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "10/21 09:00",
-   "rel": "6일 16시간 후",
+   "rel": "6일 15시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -406,6 +406,51 @@
   }
  ],
  "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "(task: 20261014-165157-tg-fallback-786245163)"
+  },
+  {
+   "ts": "16:51:58",
+   "who": "짭비스",
+   "msg": "⏳ 너무 오래 걸려서(30분 초과) 워커 큐로 돌렸어. 진행되면 5분마다 알려주고 끝나면 결과 보낼게."
+  },
+  {
+   "ts": "16:51:58",
+   "who": "사용자",
+   "msg": "내쉬봇 팀내 현재버전,버전 달력, aep작업지라컨플현황,누가머지안했어,멘션리포트 회의일정알림 등 제안도 하는봇 클릭으로 내지라 할일 스케쥴 등"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "(task: 20261014-164423-tg-fallback-786245162)"
+  },
+  {
+   "ts": "16:44:24",
+   "who": "짭비스",
+   "msg": "⏳ 너무 오래 걸려서(30분 초과) 워커 큐로 돌렸어. 진행되면 5분마다 알려주고 끝나면 결과 보낼게."
+  },
+  {
+   "ts": "16:44:24",
+   "who": "사용자",
+   "msg": "내쉬봇 팀내 현재버전,버전 달력, aep작업지라컨플현황,누가머지안했어,멘션리포트 회의일정알림 등"
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "(task: 20261014-164018-tg-fallback-786245161)"
+  },
+  {
+   "ts": "16:40:19",
+   "who": "짭비스",
+   "msg": "⏳ 너무 오래 걸려서(30분 초과) 워커 큐로 돌렸어. 진행되면 5분마다 알려주고 끝나면 결과 보낼게."
+  },
+  {
+   "ts": "16:40:19",
+   "who": "사용자",
+   "msg": "rag 많은 질문의 기획은 반드시 튜닝을 돌리고 좋은 답변으로 업데이트 한다"
+  },
   {
    "ts": "",
    "who": "",
