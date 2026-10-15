@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-15 16:00:00",
- "generated_short": "10/15 16:00",
+ "generated": "2026-10-15 17:00:00",
+ "generated_short": "10/15 17:00",
  "today": "2026-10-15",
  "services": [
   {
@@ -42,115 +42,127 @@
  },
  "imminent": [
   {
+   "when": "10/16 09:00",
+   "rel": "15시간 59분 후",
+   "text": "",
+   "unit": "reminder-vacation-teams-bot-20261016.timer"
+  },
+  {
    "when": "10/19 09:00",
-   "rel": "3일 16시간 후",
+   "rel": "3일 15시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/20 09:00",
-   "rel": "4일 16시간 후",
+   "rel": "4일 15시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "10/20 09:00",
-   "rel": "4일 16시간 후",
+   "rel": "4일 15시간 후",
    "text": "",
    "unit": "reminder-hoon-poco-gift-money-20261020.timer"
   },
   {
    "when": "10/22 09:00",
-   "rel": "6일 16시간 후",
+   "rel": "6일 15시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
  ],
  "reminders": [
   {
+   "when": "10/16 09:00",
+   "rel": "15시간 59분 후",
+   "text": "",
+   "unit": "reminder-vacation-teams-bot-20261016.timer"
+  },
+  {
    "when": "10/19 09:00",
-   "rel": "3일 16시간 후",
+   "rel": "3일 15시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
    "when": "10/20 09:00",
-   "rel": "4일 16시간 후",
+   "rel": "4일 15시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "10/20 09:00",
-   "rel": "4일 16시간 후",
+   "rel": "4일 15시간 후",
    "text": "",
    "unit": "reminder-hoon-poco-gift-money-20261020.timer"
   },
   {
    "when": "10/22 09:00",
-   "rel": "6일 16시간 후",
+   "rel": "6일 15시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "10/15 16:05",
+   "when": "10/15 17:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "10/15 16:10",
+   "when": "10/15 17:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "10/15 23:00",
-   "rel": "6시간 59분 후",
+   "rel": "5시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "10/16 07:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "weather"
   },
   {
    "when": "10/16 09:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "10/16 09:30",
-   "rel": "17시간 29분 후",
+   "rel": "16시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "10/16 13:00",
-   "rel": "20시간 59분 후",
+   "rel": "19시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "10/17 10:00",
-   "rel": "1일 17시간 후",
+   "rel": "1일 16시간 후",
    "name": "makenovel"
   },
   {
    "when": "10/17 11:00",
-   "rel": "1일 18시간 후",
+   "rel": "1일 17시간 후",
    "name": "lotto-am"
   },
   {
    "when": "10/17 18:00",
-   "rel": "2일 1시간 후",
+   "rel": "2일 0시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "10/18 21:00",
-   "rel": "3일 4시간 후",
+   "rel": "3일 3시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "10/21 09:00",
-   "rel": "5일 16시간 후",
+   "rel": "5일 15시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -434,7 +446,28 @@
    ]
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "다만 할 일 목록 파일은 이번에도 수정 권한이 막혀서 못 적었어 😅 알림은 정상으로 나가. 목록에도 남기고 싶으면 수정 허용해줘, 그럼 바로 적을게."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "- 내용: 봇 아이디어 — 휴가 쓰면 현재 프로젝트 현황을 팀즈에 메시지로 자동 공유"
+  },
+  {
+   "ts": "16:46:45",
+   "who": "짭비스",
+   "msg": "내일(10/16 금) 아침 9시 알림 등록했어 ⏰ 타이머가 켜져 있고 다음 실행이 금요일 09:00으로 잡힌 것도 확인했어."
+  },
+  {
+   "ts": "16:46:45",
+   "who": "사용자",
+   "msg": "내일 아침 봇 아이디어 휴가쓰면 현재 프로젝트 공유 팀즈에ㅠ메세지 자동으로 보내기"
+  }
+ ],
  "makenovel": {
   "todo": [],
   "in_progress": [],
