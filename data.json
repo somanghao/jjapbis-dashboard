@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-16 16:00:00",
- "generated_short": "10/16 16:00",
+ "generated": "2026-10-16 17:00:00",
+ "generated_short": "10/16 17:00",
  "today": "2026-10-16",
  "services": [
   {
@@ -43,25 +43,31 @@
  "imminent": [
   {
    "when": "10/19 09:00",
-   "rel": "2일 16시간 후",
+   "rel": "2일 15시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
+   "when": "10/19 09:00",
+   "rel": "2일 15시간 후",
+   "text": "",
+   "unit": "reminder-obsidian-memory-20261019.timer"
+  },
+  {
    "when": "10/20 09:00",
-   "rel": "3일 16시간 후",
+   "rel": "3일 15시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "10/20 09:00",
-   "rel": "3일 16시간 후",
+   "rel": "3일 15시간 후",
    "text": "",
    "unit": "reminder-hoon-poco-gift-money-20261020.timer"
   },
   {
    "when": "10/22 09:00",
-   "rel": "5일 16시간 후",
+   "rel": "5일 15시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
@@ -69,88 +75,94 @@
  "reminders": [
   {
    "when": "10/19 09:00",
-   "rel": "2일 16시간 후",
+   "rel": "2일 15시간 후",
    "text": "",
    "unit": "reminder-dan-sean-doc-biweekly.timer"
   },
   {
+   "when": "10/19 09:00",
+   "rel": "2일 15시간 후",
+   "text": "",
+   "unit": "reminder-obsidian-memory-20261019.timer"
+  },
+  {
    "when": "10/20 09:00",
-   "rel": "3일 16시간 후",
+   "rel": "3일 15시간 후",
    "text": "",
    "unit": "reminder-chief-mail-recipients-biweekly.timer"
   },
   {
    "when": "10/20 09:00",
-   "rel": "3일 16시간 후",
+   "rel": "3일 15시간 후",
    "text": "",
    "unit": "reminder-hoon-poco-gift-money-20261020.timer"
   },
   {
    "when": "10/22 09:00",
-   "rel": "5일 16시간 후",
+   "rel": "5일 15시간 후",
    "text": "",
    "unit": "reminder-chief-room-doc-biweekly.timer"
   }
  ],
  "crons": [
   {
-   "when": "10/16 16:05",
+   "when": "10/16 17:05",
    "rel": "4분 후",
    "name": "dashboard-deploy"
   },
   {
-   "when": "10/16 16:10",
+   "when": "10/16 17:10",
    "rel": "9분 후",
    "name": "makenovel-watch"
   },
   {
    "when": "10/16 23:00",
-   "rel": "6시간 59분 후",
+   "rel": "5시간 59분 후",
    "name": "daily-review"
   },
   {
    "when": "10/17 07:00",
-   "rel": "14시간 59분 후",
+   "rel": "13시간 59분 후",
    "name": "weather"
   },
   {
    "when": "10/17 09:00",
-   "rel": "16시간 59분 후",
+   "rel": "15시간 59분 후",
    "name": "ideas-todos"
   },
   {
    "when": "10/17 09:30",
-   "rel": "17시간 29분 후",
+   "rel": "16시간 29분 후",
    "name": "stocks"
   },
   {
    "when": "10/17 10:00",
-   "rel": "17시간 59분 후",
+   "rel": "16시간 59분 후",
    "name": "makenovel"
   },
   {
    "when": "10/17 11:00",
-   "rel": "18시간 59분 후",
+   "rel": "17시간 59분 후",
    "name": "lotto-am"
   },
   {
    "when": "10/17 13:00",
-   "rel": "20시간 59분 후",
+   "rel": "19시간 59분 후",
    "name": "lunch"
   },
   {
    "when": "10/17 18:00",
-   "rel": "1일 1시간 후",
+   "rel": "1일 0시간 후",
    "name": "lotto-pm"
   },
   {
    "when": "10/18 21:00",
-   "rel": "2일 4시간 후",
+   "rel": "2일 3시간 후",
    "name": "todos-weekly"
   },
   {
    "when": "10/21 09:00",
-   "rel": "4일 16시간 후",
+   "rel": "4일 15시간 후",
    "name": "chief-biweekly"
   },
   {
@@ -422,7 +434,28 @@
    "items": []
   }
  ],
- "chat": [],
+ "chat": [
+  {
+   "ts": "",
+   "who": "",
+   "msg": "할 일 목록 파일은 이번에도 수정 권한이 막혀서 못 적었어 😅 그래서 어제 휴가 팀즈 봇 아이디어도 아직 목록에 안 들어가 있어. 알림은 둘 다 정상으로 나가니까 걱정은 안 해도 돼. 이 파일만 수정 허용해주면 둘 다 바로 적어둘게."
+  },
+  {
+   "ts": "",
+   "who": "",
+   "msg": "- 내용: 기존 메모리를 옵시디언 형태(노트끼리 링크로 연결)로 통합해서, 한 가지 일을 할 때 2~3개 이상 프로젝트 메모리를 조합해 쓸 수 있게 만들어보기"
+  },
+  {
+   "ts": "16:21:08",
+   "who": "짭비스",
+   "msg": "다음 주 월요일(10/19) 아침 9시에 알림 가게 등록했어 ⏰ 켜져 있는 거랑 다음 실행이 월요일 09:00으로 잡힌 것도 확인했어."
+  },
+  {
+   "ts": "16:21:08",
+   "who": "사용자",
+   "msg": "다음주 월요일 9시 알림 기존 메모리 통합을 옵시디언 형태로 저장하면 한가지 일을 할때 2,3개 이상의 프로젝트들의 메모리를 조합해서 쓸수 있겠다 만들어보자"
+  }
+ ],
  "makenovel": {
   "todo": [],
   "in_progress": [],
