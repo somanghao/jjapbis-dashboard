@@ -29,6 +29,7 @@
     { id: "idea", ico: "💡" },
     { id: "pl", ico: "📋" },
     { id: "makenovel", ico: "📖" },
+    { id: "chat", ico: "💬" },
   ];
 
   function ls(k, v) {
@@ -60,9 +61,25 @@
   function remRows(list, emptyMsg) {
     if (!list || !list.length) return empty(emptyMsg || "없음");
     return list.map(function (r) {
-      return '<div class="row"><div class="row-when">' + esc(r.when) + " · " + esc(r.rel) +
-        '</div><div class="row-text">' + esc(r.text) + "</div></div>";
+      var tag = r.past ? ' <span class="tag">지남</span>' : "";
+      var when = r.past ? esc(r.when) : esc(r.when) + " · " + esc(r.rel);
+      var detail = r.detail ? '<div class="sub">' + esc(r.detail) + "</div>" : "";
+      return '<div class="row"><div class="row-when">' + when +
+        '</div><div class="row-text">' + esc(r.text) + tag + detail + "</div></div>";
     }).join("");
+  }
+  function arcRows(list, emptyMsg) {
+    if (!list || !list.length) return empty(emptyMsg || "없음");
+    return list.map(function (r) {
+      var detail = r.detail && r.detail !== r.text ? '<div class="sub">' + esc(r.detail) + "</div>" : "";
+      return '<div class="row"><div class="row-when">' + esc(r.when) +
+        '</div><div class="row-text">' + esc(r.text) + ' <span class="tag">' + esc(r.status) + "</span>" +
+        detail + "</div></div>";
+    }).join("");
+  }
+  function textRows(list, emptyMsg) {
+    if (!list || !list.length) return empty(emptyMsg || "없음");
+    return list.map(function (x) { return '<div class="row"><div class="row-text">' + esc(x) + "</div></div>"; }).join("");
   }
   function ideaRows(list) {
     if (!list || !list.length) return empty("오늘자 없음");
@@ -100,20 +117,24 @@
   /* ---- 패널 빌더 ---- */
   function buildPanels(d) {
     var P = {};
-    P.overview = svcStrip(d.services) +
-      cardHTML("imminent", "⏰ 임박 알림", d.imminent.length, remRows(d.imminent, "임박한 알림 없음")) +
-      cardHTML("today_memo", "📝 오늘 메모", d.today_memos.length,
-        rows(d.today_memos, function (x) { return '<div class="row"><div class="row-text">' + esc(x) + "</div></div>"; }) === empty("없음")
-          ? empty("오늘자 없음") : rows(d.today_memos, function (x) { return '<div class="row"><div class="row-text">' + esc(x) + "</div></div>"; })) +
-      cardHTML("today_idea", "💡 오늘 아이디어", d.today_ideas.length, ideaRows(d.today_ideas)) +
-      cardHTML("chat", "💬 오늘 대화", d.chat.length, chatRows(d.chat));
+    /* 첫 화면 = 봐야 할 것만: 이상 있을 때 시스템 줄 → 이번 주 알림 → 결정할 것 → 다시 볼 지난 알림 */
+    P.overview = (d.services_ok ? "" : svcStrip(d.services)) +
+      cardHTML("week", "⏰ 이번 주 알림", d.week.length, remRows(d.week, "이번 주(월~금) 알림 없음")) +
+      cardHTML("decisions", "🤔 결정할 것", d.decisions.length, textRows(d.decisions, "결정 대기 없음")) +
+      cardHTML("recall", "🔁 다시 볼 지난 알림", d.archive_open ? "미처리 " + d.archive_open : "",
+        arcRows(d.recall, "다시 볼 알림 없음")) +
+      (d.today_memos.length ? cardHTML("today_memo", "📝 오늘 메모", d.today_memos.length, textRows(d.today_memos)) : "") +
+      (d.today_ideas.length ? cardHTML("today_idea", "💡 오늘 아이디어", d.today_ideas.length, ideaRows(d.today_ideas)) : "");
 
-    P.alarm = cardHTML("reminders", "⏰ 예정 알림 (내가 보낸)", d.reminders.length, remRows(d.reminders, "예정 알림 없음")) +
+    P.alarm = cardHTML("reminders", "⏰ 예정 알림", d.reminders.length, remRows(d.reminders, "예정 알림 없음")) +
+      cardHTML("archive", "📚 지난 알림 전체 기록", d.archive.length, arcRows(d.archive, "기록 없음")) +
       cardHTML("crons", "🔁 정기 브리핑", d.crons.length,
         rows(d.crons, function (c) {
           return '<div class="row"><div class="row-when">' + esc(c.when) + " · " + esc(c.rel) +
             '</div><div class="row-text">' + esc(c.name) + "</div></div>";
         }));
+
+    P.chat = svcStrip(d.services) + cardHTML("chat", "💬 오늘 대화", d.chat.length, chatRows(d.chat));
 
     P.todo = cardHTML("todos", "✅ 할일 / 메모", todoCount(d), sectionRows(d.todos)) +
       cardHTML("open", "📌 오픈 항목", "", sectionRows(d.open_items));
@@ -174,6 +195,7 @@
   }
   function todoCount(d) { var n = 0; d.todos.forEach(function (s) { n += s.items.length; }); return n; }
   function tabBadge(d, id) {
+    if (id === "overview") return d.services_ok ? "" : "!";
     if (id === "alarm") return d.reminders.length;
     if (id === "todo") return todoCount(d);
     if (id === "idea") return d.ideas.length;
@@ -197,7 +219,7 @@
 
     return '<div class="dash">' +
       '<header class="dash-top"><div class="dash-brand">🤖 짭비스</div>' +
-      '<div class="dash-gen">' + esc(d.generated_short) + " 갱신</div>" +
+      '<div class="dash-gen">' + esc(d.generated_short) + " 갱신" + (d.services_ok ? " · 시스템 정상" : " · ⚠️ 시스템 이상") + "</div>" +
       '<div class="skin-pick"><button class="skin-toggle" id="skinToggle" title="스킨 전환" aria-label="스킨 전환">🎨</button>' +
       '<div class="skin-menu" id="skinMenu">' + skinOpts + "</div></div>" +
       '</header>' +
