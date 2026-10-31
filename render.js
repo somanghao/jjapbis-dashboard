@@ -220,7 +220,8 @@
     return '<div class="dash">' +
       '<header class="dash-top"><div class="dash-brand">🤖 짭비스</div>' +
       '<div class="dash-gen">' + esc(d.generated_short) + " 갱신" + (d.services_ok ? " · 시스템 정상" : " · ⚠️ 시스템 이상") + "</div>" +
-      '<div class="skin-pick"><button class="skin-toggle" id="skinToggle" title="스킨 전환" aria-label="스킨 전환">🎨</button>' +
+      '<div class="skin-pick"><a class="skin-toggle" id="appDl" style="display:none;text-decoration:none;margin-right:6px" title="짭비서 앱 받기">📱</a>' +
+      '<button class="skin-toggle" id="skinToggle" title="스킨 전환" aria-label="스킨 전환">🎨</button>' +
       '<div class="skin-menu" id="skinMenu">' + skinOpts + "</div></div>" +
       '</header>' +
       '<nav class="tabbar">' + tabs + "</nav>" +
@@ -258,10 +259,22 @@
     }
   }
 
+  /* 짭비서 폰 앱 받기 — app/latest.json 은 NucBox(터널)에만 있다(GitHub Pages 배포 제외 → 링크 숨김 유지) */
+  function appLink() {
+    fetch("app/latest.json?ts=" + Date.now()).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (a) {
+        var el = document.getElementById("appDl");
+        if (!a || !el) return;
+        el.href = a.apk; el.title = "짭비서 앱 v" + a.versionName + " 받기 (" + a.built + ")";
+        el.style.display = "";
+      }).catch(function () {});
+  }
+
   function paint(d) {
     window.__P = buildPanels(d);
     document.getElementById("app").innerHTML = buildShell(d);
     wire();
+    appLink();
     activateTab(ls("jjtab") || "overview");
     applySkin(ls("jjskin") || "webtoon");
   }
