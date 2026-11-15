@@ -101,7 +101,7 @@
     if (!list || !list.length) return empty("오늘 대화 없음");
     return list.map(function (c) {
       var who = c.who === "사용자" ? "is-user" : "is-bot";
-      return '<div class="chat-line ' + who + '"><span class="chat-who">' + esc(c.who) +
+      return '<div class="chat-line ' + who + '"><span class="chat-who">' + esc(c.label || c.who) +
         '</span><span class="chat-when">' + esc(c.ts) + '</span><div class="chat-msg">' + esc(c.msg) + "</div></div>";
     }).join("");
   }
